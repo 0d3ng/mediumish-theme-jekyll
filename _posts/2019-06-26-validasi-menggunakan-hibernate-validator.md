@@ -24,7 +24,7 @@ tags:
   - java
 ---
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/header-hibernate-validator-1024x683.jpg" alt="" class="wp-image-368" /></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/header-hibernate-validator-1024x683.jpg" alt="" class="wp-image-368" /></figure>
 </div>
 
 Bismillah,  

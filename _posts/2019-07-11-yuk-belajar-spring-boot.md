@@ -40,8 +40,9 @@ Tetapi sebelum lebih jauh mempelajari Spring Boot, sebenarnya Spring Boot sendir
 
 #### Konfigurasi Spring Boot &#8211; Browser {#Konfigurasi-Spring-Boot---Browser}
 
-Untuk dapat memulai project Spring Boot dengan `Spring Initializr`, langkah awal yang dapat dilakukan adalah melakukan konfigurasi melalui browser. Silakan menuju ke halaman website <a rel="noreferrer noopener" aria-label="ini (opens in a new tab)" href="https://start.spring.io/" target="_blank">ini</a>. Kira-kira tampilannya adalah sebagai berikut<figure class="wp-block-image is-resized">
+Untuk dapat memulai project Spring Boot dengan `Spring Initializr`, langkah awal yang dapat dilakukan adalah melakukan konfigurasi melalui browser. Silakan menuju ke halaman website <a rel="noreferrer noopener" aria-label="ini (opens in a new tab)" href="https://start.spring.io/" target="_blank">ini</a>. Kira-kira tampilannya adalah sebagai berikut
 
+<figure class="wp-block-image is-resized">
 <img src="/assets/images/2019/07/Spring-boot-01.png" alt="Spring Initializr Browser" class="wp-image-380" width="602" height="503" srcset="/assets/images/2019/07/Spring-boot-01.png 802w, /assets/images/2019/07/Spring-boot-01-300x251.png 300w, /assets/images/2019/07/Spring-boot-01-768x642.png 768w" sizes="(max-width: 602px) 100vw, 602px" /> <figcaption>Spring Initializr Browser</figcaption></figure> 
 
 Dari tampilan di atas ada beberapa inputan yang perlu diisi ketika akan membuat sebuah projek menggunakan Spring Boot, dijelaskan seperti di bawah ini

@@ -28,9 +28,10 @@ tags:
 <figure class="wp-block-image"><img src="/assets/images/2019/08/Web-Thymeleaf-Spring-Boot-1024x729.jpg" alt="" class="wp-image-447" /></figure> 
 
 Bismillah,  
-Artikel kali ini adalah lanjutan dari artikel <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/yuk-belajar-web-menggunakan-spring-boot/" target="_blank">sebelumnya</a> yang terakhir fiturnya adalah menampilkan semua data pada sebuah halaman web. Sementara kali ini, akan kita coba mengimplementasikan edit data, hapus data, validation, dan beberapa fungsi menarik lainnya. Tampilan utama aplikasi yang kita bangun adalah sebagai berikut.<figure class="wp-block-image">
+Artikel kali ini adalah lanjutan dari artikel <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/yuk-belajar-web-menggunakan-spring-boot/" target="_blank">sebelumnya</a> yang terakhir fiturnya adalah menampilkan semua data pada sebuah halaman web. Sementara kali ini, akan kita coba mengimplementasikan edit data, hapus data, validation, dan beberapa fungsi menarik lainnya. Tampilan utama aplikasi yang kita bangun adalah sebagai berikut.
 
-<img src="/assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-1024x426.png" alt="" class="wp-image-451" srcset="/assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-1024x426.png 1024w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-300x125.png 300w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-768x319.png 768w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2.png 1157w" sizes="(max-width: 1024px) 100vw, 1024px" /> </figure> 
+<figure class="wp-block-image">
+<img src="/assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-1024x426.png" alt="" class="wp-image-451" srcset="/assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-1024x426.png 1024w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-300x125.png 300w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-768x319.png 768w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2.png 1157w" sizes="(max-width: 1024px) 100vw, 1024px"/> </figure> 
 
 Beberapa point yang akan kita bahas adalah sebagai berikut
 

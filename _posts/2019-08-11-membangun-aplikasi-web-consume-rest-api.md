@@ -36,9 +36,10 @@ Pada kesempatan yang lalu saya telah menulis tentang cara membuat aplikasi web m
   * [Membuat Service](#Membuat-Service)
   * [Membuat Controller](#Membuat-Controller)
   * [Membuat View](#Membuat-View)
-  * [Referensi](#Referensi)<figure class="wp-block-image">
+  * [Referensi](#Referensi)
 
-<img src="/assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-1024x426.png" alt="" class="wp-image-451" srcset="/assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-1024x426.png 1024w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-300x125.png 300w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-768x319.png 768w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2.png 1157w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>Tampilan Utama</figcaption></figure> 
+<figure class="wp-block-image">
+<img src="/assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-1024x426.png" alt="" class="wp-image-451" srcset="/assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-1024x426.png 1024w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-300x125.png 300w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-768x319.png 768w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2.png 1157w" sizes="(max-width: 1024px) 100vw, 1024px"/> <figcaption>Tampilan Utama</figcaption></figure> 
 
 #### Konfigurasi Spring Boot {#Konfigurasi-Spring-Boot}
 

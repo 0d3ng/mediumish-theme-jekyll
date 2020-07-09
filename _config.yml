@@ -1,7 +1,7 @@
 # Site
 name: "Sinaungoding"
 title: "Sinaungoding"
-description: "Jekyll template, Medium styled, free for bloggers."
+description: "Orang boleh pandai setinggi langit, tapi selama ia tak menulis, ia akan hilang di dalam masyarakat dan dari sejarah. - Pramoedya Ananta Toer"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 #baseurl: /sinaungoding
@@ -32,13 +32,13 @@ authors:
     description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
   odeng:
     name: Noprianto
-    display_name: odeng
+    display_name: noprianto
     avatar: 'assets/images/odeng.jpeg'
     gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: lepengdados@gmail.com
     web: https://sinaungoding.com
     twitter: https://twitter.com/mas_nopri
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+    description: "Learner, Software engineer, and Opensource Enthusiasm"
 
 # Plugins
 plugins:

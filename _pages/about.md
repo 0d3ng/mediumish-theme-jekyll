@@ -1,35 +1,31 @@
 ---
+id: 126
+title: About
+date: 2019-04-16T04:10:18+07:00
+author: odeng
 layout: page
-title: Mediumish Template for Jekyll
+guid: http://www.sinaungoding.com/wordpress/?page_id=126
 permalink: /about
-comments: true
+wp_last_modified_info:
+  - June 20, 2019 @ 6:50 am
+wplmi_shortcode:
+  - '[lmt-post-modified-info]'
+site-sidebar-layout:
+  - default
+site-content-layout:
+  - default
+theme-transparent-header-meta:
+  - default
 ---
-
-<div class="row justify-content-between">
-<div class="col-md-8 pr-5">
-
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
-
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
-
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
-
-<h4>Questions or bug reports?</h4>
-
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
-
+<div class="wp-block-image">
+  <figure class="alignleft is-resized"><img src="/assets/images/2019/04/30645300-150x150.jpeg" alt="" class="wp-image-127" width="150" height="150" srcset="/assets/images/2019/04/30645300-150x150.jpeg 150w, /assets/images/2019/04/30645300-300x300.jpeg 300w, /assets/images/2019/04/30645300.jpeg 460w" sizes="(max-width: 150px) 100vw, 150px" /></figure>
 </div>
 
-<div class="col-md-4">
+Nama saya adalah Noprianto, pernah bekerja di industri kurang lebih 6 tahun. Sekarang berhijrah ke dunia akademik di Politeknik Negeri Malang. Menyukai dunia pemrograman terutama bahasa pemrograman Java, _computer vision_ dan _machine learning_. Bercita-cita ingin berbagi ilmu ke orang lain dari hasil pengalaman ketika di dunia industri dan pengalaman baru. Demikian profil singkat saya, semoga bermanfaat. 🙂
 
-<div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
+#### Contact
 
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
-
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
-
-</div>
-</div>
-</div>
+  * Email: <noprianto@polinema.ac.id>
+  * Github: <https://github.com/0d3ng>
+  * Linkedin: <https://www.linkedin.com/in/nopri-anto-0a9764b6>
+  * Telegram: <a rel="noreferrer noopener" aria-label="@nopriant0 (opens in a new tab)" href="https://t.me/nopriant0" target="_blank">@nopriant0</a>

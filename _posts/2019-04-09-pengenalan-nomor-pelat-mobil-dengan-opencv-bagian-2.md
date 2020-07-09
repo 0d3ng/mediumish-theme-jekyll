@@ -27,14 +27,14 @@ tags:
   - segmentasi
 ---
 Bismillah,  
-masih menyambung postingan saya <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="http://www.sinaungoding.com/wordpress/2019/04/08/pengenalan-nomor-pelat-mobil-dengan-opencvbagian-1/" target="_blank">sebelumnya</a> terkait dengan pengenalan nomor pelat mobil kita telah berhasil melokalisasi atau menemukan lokasi nomor pelat. Pada bagian 2 ini kita akan melakukan segmentasi karakter-karakter yang terdapat pada sebuah pelat hasil pemprosesan sebelumnya.
+masih menyambung postingan saya <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/pengenalan-nomor-pelat-mobil-dengan-opencv-bagian-1/" target="_blank">sebelumnya</a> terkait dengan pengenalan nomor pelat mobil kita telah berhasil melokalisasi atau menemukan lokasi nomor pelat. Pada bagian 2 ini kita akan melakukan segmentasi karakter-karakter yang terdapat pada sebuah pelat hasil pemprosesan sebelumnya.
 
 #### Segmentasi Karakter Pelat
 
 Segmentasi merupakan sebuah proses memisahkan daerah atau objek yang penting dari sebuah citra. Jika pada citra pelat yang akan dipisahkan adalah karakter yang terdapat pada sebuah pelat, yaitu karakter alfanumerik(kombinasi angka dan huruf). Tidak semua karakter akan disegmentasi, hanya karakter nomor pelat kendaraan saja sedangkan untuk bulan dan tahun berlaku tidak akan disegmentasi. 
 
 <div class="wp-block-image">
-  <figure class="aligncenter is-resized"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/result.jpg" alt="" class="wp-image-77" width="302" height="91" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/04/result.jpg 302w, https://www.sinaungoding.com/wp-content/uploads/2019/04/result-300x90.jpg 300w" sizes="(max-width: 302px) 100vw, 302px" /><figcaption>Hasil deteksi pelat</figcaption></figure>
+  <figure class="aligncenter is-resized"><img src="/assets/images/2019/04/result.jpg" alt="" class="wp-image-77" width="302" height="91" srcset="/assets/images/2019/04/result.jpg 302w, /assets/images/2019/04/result-300x90.jpg 300w" sizes="(max-width: 302px) 100vw, 302px" /><figcaption>Hasil deteksi pelat</figcaption></figure>
 </div>
 
 Gambar di atas merupakan hasil deteksi pelat pada citra inputan yang berhasil dideteksi. Untuk melakukan segmentasi sebenarnya hampir mirip dari metode yang sebelumnya yaitu menggunakan ekstraksi kontur, perbedaannya adalah pada segmentasi karakter pelat disesuaikan ukuran dan rasionya untuk masing-masing karakter. Alur program yang akan kita buat adalah membaca direktori hasil lokalisasi pelat kemudian mengolahnya untuk dilakukan segmentasi, awal kode yang dibuat harus menyertakan depedensi 2 baris kode seperti di bawah ini
@@ -43,7 +43,7 @@ Gambar di atas merupakan hasil deteksi pelat pada citra inputan yang berhasil di
 import os</code></pre>
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/segmentasi-bw.jpg" alt="" class="wp-image-87" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/04/segmentasi-bw.jpg 302w, https://www.sinaungoding.com/wp-content/uploads/2019/04/segmentasi-bw-300x90.jpg 300w" sizes="(max-width: 302px) 100vw, 302px" /><figcaption>Konversi menjadi image biner</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/segmentasi-bw.jpg" alt="" class="wp-image-87" srcset="/assets/images/2019/04/segmentasi-bw.jpg 302w, /assets/images/2019/04/segmentasi-bw-300x90.jpg 300w" sizes="(max-width: 302px) 100vw, 302px" /><figcaption>Konversi menjadi image biner</figcaption></figure>
 </div>
 
 Seperti preprocessing pada langkah yang sebelumnya, yang harus dilakukan adalah mengubah gambar menjadi biner untuk dilakukan processing yang lebih lanjut. Baris perintah yang digunakan untuk preprocessing tersebut adalah sebagai berikut
@@ -82,7 +82,7 @@ Langkah preprocessing selanjutnya adalah melakukan operasi morfologi, operasi mo
 Hasilnya morfologi dapat ditampilkan pada gambar di bawah, terlihat bahwa karakter menipis dari hasil binerisasi sebelumnya. 
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/segmentasi-erode.jpg" alt="" class="wp-image-88" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/04/segmentasi-erode.jpg 302w, https://www.sinaungoding.com/wp-content/uploads/2019/04/segmentasi-erode-300x90.jpg 300w" sizes="(max-width: 302px) 100vw, 302px" /><figcaption>Hasil operasi morfologi</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/segmentasi-erode.jpg" alt="" class="wp-image-88" srcset="/assets/images/2019/04/segmentasi-erode.jpg 302w, /assets/images/2019/04/segmentasi-erode-300x90.jpg 300w" sizes="(max-width: 302px) 100vw, 302px" /><figcaption>Hasil operasi morfologi</figcaption></figure>
 </div>
 
 Kemudian ekstraksi kontur dibutuhkan untuk mendapatkan semua kontur yang merupakan kandidat sebuah karakter pelat. Seperti biasanya, kontur harus diseleksi berdasarkan ukuran dan rasio sebuah karakter pelat. Pada bagian ini perlu disesuaikan nilainya, mungkin jika kasus yang berbeda atau dataset yang berbeda nilainya perlu disesuaikan. Nilai pada kode yang saya lampirkan, adalah normatif artinya perlu disesuaikan dengan kebutuhan.
@@ -106,7 +106,7 @@ Kemudian ekstraksi kontur dibutuhkan untuk mendapatkan semua kontur yang merupak
 Hasil dari potongan kode di atas akan melakukan segmentasi karakter pelat dari gambar inputan dengan ditandai gambar segiempat berwarna merah. Silakan ditambahkan kodenya sedikit agar bisa melakukan croping pada bagian karakter agar dapat dilakukan pengenalan atau proses yang selanjutnya.
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/segmentasi-result.jpg" alt="" class="wp-image-89" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/04/segmentasi-result.jpg 302w, https://www.sinaungoding.com/wp-content/uploads/2019/04/segmentasi-result-300x90.jpg 300w" sizes="(max-width: 302px) 100vw, 302px" /><figcaption>Hasil segmentasi</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/segmentasi-result.jpg" alt="" class="wp-image-89" srcset="/assets/images/2019/04/segmentasi-result.jpg 302w, /assets/images/2019/04/segmentasi-result-300x90.jpg 300w" sizes="(max-width: 302px) 100vw, 302px" /><figcaption>Hasil segmentasi</figcaption></figure>
 </div>
 
 Ada beberapa catatan terkait hasil di atas, masih memungkinkan karakter tertentu yang tersegmentasi bertumpuk atau bersinggungan misalkan jika nanti menemukan karakter huruf D, O, dan angka 0. Selain itu untuk melakukan pembacaan dilakukan dari kiri ke kanan, hal tersebut perlu dilakukan sorting hasil dari karakter yang tersegmentasi. Perlu dilakukan optimize code yang dibuat saat ini, silakan berekperiment terkait kasus atau kondisi tersebut. Full code untuk melakukan segmentasi dapat Anda clone di <a href="https://github.com/0d3ng/plate-detection-pi/tree/plate-segmentation" target="_blank" rel="noreferrer noopener" aria-label="sini (opens in a new tab)">sini</a>.

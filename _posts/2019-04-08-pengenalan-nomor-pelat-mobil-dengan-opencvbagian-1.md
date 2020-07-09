@@ -5,7 +5,7 @@ date: 2019-04-08T07:38:44+07:00
 author: odeng
 layout: post
 guid: http://www.sinaungoding.com/wordpress/?p=68
-permalink: /pengenalan-nomor-pelat-mobil-dengan-opencvbagian-1/
+permalink: /pengenalan-nomor-pelat-mobil-dengan-opencv-bagian-1/
 wp_last_modified_info:
   - June 14, 2019 @ 7:54 pm
 wplmi_shortcode:
@@ -34,16 +34,16 @@ Selain sebagai kamera pengawas, _CCTV(Closed-circuit television)_ juga dapat dim
 
 Fokus tulisan ini tidak membahas semua manfaat kamera _CCTV(Closed-circuit television)_, tapi hanya satu yaitu tentang pengenalan nomor pelat kendaraan itu sendiri atau istilah lain yaitu _ANPR(Automatic Number Plat Recognition)_. Sebenarnya ada tiga tahapan atau proses yang dilakukan pada sistem ini. Tiga tahap tersebut adalah sebagai berikut:
 
-  * Mendeteksi pelat kendaraan
+  * [Mendeteksi pelat kendaraan](#mendeteksi-pelat-kendaraan)
   * Segmentasi karakter pelat
   * Mengenali karakter itu sendiri
 
-#### Mendeteksi Pelat Kendaraan
+#### Mendeteksi Pelat Kendaraan {#mendeteksi-pelat-kendaraan}
 
 Mendeteksi pelat kendaraan adalah langkah yang pertama kali dilakukan untuk mengenali nomor pelat kendaraan, algoritmanya pun banyak untuk dapat melakukan proses ini dari yang sederahana sampai ribet tergantung dari kondisi atau kasus yang ada. Beberapa metode atau algoritma yang bisa digunakan adalah _Deep Learning, Haar Cascade, dan Contour Detection_. Pada kesempatan kali ini saya akan mencoba untuk mengimplementasikan _Contour Detection_ untuk mengetahui keberadaan objek pelat kendaraan. Prinsip dari algoritma ini adalah dengan mengekstrak kontur yang terdapat pada sebuah citra atau gambar, kontur yang berbentuk dan menyerupai pelat kendaraan yang dipilih sebagai kandidat sebuah pelat kendaraan.
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><a href="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/car6-1-e1554679360862.jpg" target="_blank" rel="noreferrer noopener"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/car6-1-e1554679360862.jpg" alt="" class="wp-image-70" /></a><figcaption>contoh input kendaraan</figcaption></figure>
+  <figure class="aligncenter"><a href="/assets/images/2019/04/car6-1-e1554679360862.jpg" target="_blank" rel="noreferrer noopener"><img src="/assets/images/2019/04/car6-1-e1554679360862.jpg" alt="" class="wp-image-70" /></a><figcaption>contoh input kendaraan</figcaption></figure>
 </div>
 
 Gambar di atas merupakan gambar input yang akan kita gunakan untuk mencoba mendeteksi suatu pelat kendaraan. Sebelumnya menjalankan code python, terlebih dahulu silakan install paket-paket yang dibutuhkan yaitu opencv-python. Beberapa yang perlu diimport adalah sebagai berikut
@@ -83,7 +83,7 @@ for file_name in sorted(os.listdir(path_source)):
 Setelah folder dibaca kemudian perlu dilakukan filtering untuk menghilangkan noise atau derau yang terdapat pada citra. Hasil dari citra yang telah dihilangkan noisenya, perlu dilakukan grayscale atau keabuan sebelum diubah menjadi citra biner. Proses binerisasi menggunakan adaptive thresholding, kenapa tidak menggunakan Otsu setelah saya coba adaptive thresholding lebih baik hasilnya daripada Otsu. Hasil binerisasi ditunjukkan pada gambar di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/bw-e1554704369755.jpg" alt="" class="wp-image-75" /><figcaption>Image binerisasi</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/bw-e1554704369755.jpg" alt="" class="wp-image-75" /><figcaption>Image binerisasi</figcaption></figure>
 </div>
 
 Selanjutnya setelah proses binerisasi, langkah yang perlu kita lakukan adalah melakukan ekstraksi kontur untuk mendapatkan semua kontur yang terdapat image biner hasil proses sebelumnya. Untuk masalah ekstraksi kontur dapat digunakan baris perintah di bawah ini
@@ -113,7 +113,7 @@ Hasil dari ekstraksi kontur sangatlah banyak sehingga perlu dilakukan seleksi ko
 Untuk menyeleksi sebuah kandidat pelat membutuhkan ukuran dan rasio dari sebuah pelat sendiri, ukuran dan rasio tergantung dari dataset yang Anda gunakan. Silakan disesuaikan dengan ukuran dan rasio dengan kebutuhan Anda terkait hal tersebut karena sangat tergantung dari input citra. Sebenarnya walaupun sudah diseleksi tetap saja masih ada kontur yang menyerupai pelat, pada gambar di bawah ini masih menyisakan 2 kontur yaitu yang pertama adalah kontur yang benar-benar pelat dan kontur bukan pelat yang ditunjukkan pada gambar di bawah ini. What is next to do?
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/image-e1554704464312.jpg" alt="" class="wp-image-76" /><figcaption>Hasil deteksi kontur</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/image-e1554704464312.jpg" alt="" class="wp-image-76" /><figcaption>Hasil deteksi kontur</figcaption></figure>
 </div>
 
 Langkah terakhir yang perlu dilakukan adalah dengan melakukan proyeksi vertikal ataupun proyeksi horizontal. Metode ini adalah dengan cara menambahkan piksel secara vertikal ataupun horizontal. Jangan khawatir sudah saya sertakan untuk operasi tersebut, potongan programnya adalah sebagai berikut
@@ -153,7 +153,7 @@ Kandidat-kandidat pelat yang terdeteksi dilakukan proyeksi vertikal dibandingkan
 Hasil akhir dari langkah-langkah yang kita lakukan seharusnya seperti di bawah ini.
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/result.jpg" alt="" class="wp-image-77" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/04/result.jpg 302w, https://www.sinaungoding.com/wp-content/uploads/2019/04/result-300x90.jpg 300w" sizes="(max-width: 302px) 100vw, 302px" /><figcaption>Hasil deteksi pelat</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/result.jpg" alt="" class="wp-image-77" srcset="/assets/images/2019/04/result.jpg 302w, /assets/images/2019/04/result-300x90.jpg 300w" sizes="(max-width: 302px) 100vw, 302px" /><figcaption>Hasil deteksi pelat</figcaption></figure>
 </div>
 
 Demikianlah salah satu task yang sudah kita lakukan untuk melakukan pengenalan pelat, masih ada 2 task lagi yang kita butuhkan. Full source code bisa didownload di <a rel="noreferrer noopener" aria-label="sini (opens in a new tab)" href="https://github.com/0d3ng/plate-detection-pi" target="_blank">sini</a>, tunggu ya artikel saya yang akan datang. Cheers&#8230;.!

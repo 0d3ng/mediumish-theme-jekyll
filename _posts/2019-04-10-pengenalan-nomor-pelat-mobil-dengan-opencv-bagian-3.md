@@ -29,7 +29,7 @@ tags:
   - python
   - tensorflow
 ---
-Bismillah, Inilah part terakhir artikel saya tentang pengenalan nomor pelat mobil dengan OpenCV. Sebaiknya bagi temen-temen yang belum membaca artikel saya sebelumnya dibaca terlebih dahulu terkait artikel ini agar lebih gampang untuk difahami. Karena lumayan panjang prosesnya akan saya kelompokkan beberapa bagian seperti di bawah ini
+Bismillah, Inilah part terakhir artikel saya tentang pengenalan nomor pelat mobil dengan OpenCV. Sebaiknya bagi temen-temen yang belum membaca artikel saya <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/pengenalan-nomor-pelat-mobil-dengan-opencv-bagian-2/" target="_blank">sebelumnya</a> dibaca terlebih dahulu terkait artikel ini agar lebih gampang untuk difahami. Karena lumayan panjang prosesnya akan saya kelompokkan beberapa bagian seperti di bawah ini
 
   * [Pendahuluan](#pendahuluan)
   * [Persiapan data untuk training](#persiapan-data-untuk-training)
@@ -196,19 +196,19 @@ for car in sorted(os.listdir(data_dir_testing)):
 Contoh kode di atas adalah untuk melakukan testing, alurnya adalah membaca direktori hasil segmentasi nomor pelat mobil. Hasilnya memang tidak 100% benar, masih ada kesalahan atau kekeliruan ketika melakukan prediksi. Salah satu faktornya adalah pre-processing yang masih belum baik, kemudian juga dataset untuk melakukan training karakter masih sangat minim. Berikut ini merupakan kronologi atau perubahan-perubahan dari proses pengenalan pelat
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/car6-1-e1554679360862.jpg" alt="" class="wp-image-70" /><figcaption>Gambar masukan</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/car6-1-e1554679360862.jpg" alt="" class="wp-image-70" /><figcaption>Gambar masukan</figcaption></figure>
 </div>
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/result.jpg" alt="" class="wp-image-77" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/04/result.jpg 302w, https://www.sinaungoding.com/wp-content/uploads/2019/04/result-300x90.jpg 300w" sizes="(max-width: 302px) 100vw, 302px" /><figcaption>Hasil deteksi pelat</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/result.jpg" alt="" class="wp-image-77" srcset="/assets/images/2019/04/result.jpg 302w, /assets/images/2019/04/result-300x90.jpg 300w" sizes="(max-width: 302px) 100vw, 302px" /><figcaption>Hasil deteksi pelat</figcaption></figure>
 </div>
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/segmentasi-result.jpg" alt="" class="wp-image-89" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/04/segmentasi-result.jpg 302w, https://www.sinaungoding.com/wp-content/uploads/2019/04/segmentasi-result-300x90.jpg 300w" sizes="(max-width: 302px) 100vw, 302px" /><figcaption>Hasil segmentasi</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/segmentasi-result.jpg" alt="" class="wp-image-89" srcset="/assets/images/2019/04/segmentasi-result.jpg 302w, /assets/images/2019/04/segmentasi-result-300x90.jpg 300w" sizes="(max-width: 302px) 100vw, 302px" /><figcaption>Hasil segmentasi</figcaption></figure>
 </div>
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/Screen-Shot-2019-04-10-at-16.32.57-e1554904746302.png" alt="" class="wp-image-96" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/04/Screen-Shot-2019-04-10-at-16.32.57-e1554904746302.png 376w, https://www.sinaungoding.com/wp-content/uploads/2019/04/Screen-Shot-2019-04-10-at-16.32.57-e1554904746302-300x110.png 300w" sizes="(max-width: 376px) 100vw, 376px" /><figcaption>Hasil pengenalan</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/Screen-Shot-2019-04-10-at-16.32.57-e1554904746302.png" alt="" class="wp-image-96" srcset="/assets/images/2019/04/Screen-Shot-2019-04-10-at-16.32.57-e1554904746302.png 376w, /assets/images/2019/04/Screen-Shot-2019-04-10-at-16.32.57-e1554904746302-300x110.png 300w" sizes="(max-width: 376px) 100vw, 376px" /><figcaption>Hasil pengenalan</figcaption></figure>
 </div>
 
 Dari hasil akhir gambar di atas memang menunjukkan bahwa belum 100% berhasil mengenali setiap karakter, huruf B dikenali sebagai angka 8, huruf A dikenali sebagai angka 4, dan huruf N dikenali sebagai huruf H. Selain itu juga, urutan karakter juga masih salah yang seharusnya AB 1267 N tetapi tersegmentasi BA61N27. Ada beberapa catatan yang perlu diimprovement terkait dengan data training, hiper parameter yang perlu disesuaikan di dalam arsitektur deep learning yang telah kita buat, dan sorting hasil segmentasi. Tapi pointnya adalah temen-temen semoga bisa memahami dengan contoh di atas yang telah dibuat.

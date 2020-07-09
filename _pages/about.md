@@ -23,7 +23,7 @@ theme-transparent-header-meta:
 
 Nama saya adalah Noprianto, pernah bekerja di industri kurang lebih 6 tahun. Sekarang berhijrah ke dunia akademik di Politeknik Negeri Malang. Menyukai dunia pemrograman terutama bahasa pemrograman Java, _computer vision_ dan _machine learning_. Bercita-cita ingin berbagi ilmu ke orang lain dari hasil pengalaman ketika di dunia industri dan pengalaman baru. Demikian profil singkat saya, semoga bermanfaat. 🙂
 
-#### Contact
+##### Contact
 
   * Email: <noprianto@polinema.ac.id>
   * Github: <https://github.com/0d3ng>

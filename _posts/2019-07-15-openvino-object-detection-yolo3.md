@@ -25,11 +25,11 @@ tags:
   - tensorflow
 ---
 <div class="wp-block-image">
-  <figure class="aligncenter is-resized"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-output-1024x576.jpeg" alt="Output object detection" class="wp-image-399" width="768" height="432" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-output-1024x576.jpeg 1024w, https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-output-300x169.jpeg 300w, https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-output-768x432.jpeg 768w, https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-output.jpeg 1280w" sizes="(max-width: 768px) 100vw, 768px" /></figure>
+  <figure class="aligncenter is-resized"><img src="/assets/images/2019/07/OpenVINO-YOLO3-output-1024x576.jpeg" alt="Output object detection" class="wp-image-399" width="768" height="432" srcset="/assets/images/2019/07/OpenVINO-YOLO3-output-1024x576.jpeg 1024w, /assets/images/2019/07/OpenVINO-YOLO3-output-300x169.jpeg 300w, /assets/images/2019/07/OpenVINO-YOLO3-output-768x432.jpeg 768w, /assets/images/2019/07/OpenVINO-YOLO3-output.jpeg 1280w" sizes="(max-width: 768px) 100vw, 768px" /></figure>
 </div>
 
 Bismillah,  
-Jika pada kesempatan <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="https://www.sinaungoding.com/openvino-load-model-tensorflow/" target="_blank">sebelumnya</a> saya sudah posting mengenai objek detection pada sebuah gambar menggunakan `Single Shot Detection(SSD),` sekarang akan saya coba object detection dengan input berupa video menggunakan `You Only Look Once(YOLO)` versi 3. Peralatan yang akan digunakan adalah Raspberry Pi 3B+ dengan tertancap Neural Compute Stick 2 serta saya menggunakan Mac OSx yang sudah terinstall OpenVINO sdk. Beberapa point yang akan kita lakukan adalah sebagai berikut
+Jika pada kesempatan <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/openvino-load-model-tensorflow/" target="_blank">sebelumnya</a> saya sudah posting mengenai objek detection pada sebuah gambar menggunakan `Single Shot Detection(SSD),` sekarang akan saya coba object detection dengan input berupa video menggunakan `You Only Look Once(YOLO)` versi 3. Peralatan yang akan digunakan adalah Raspberry Pi 3B+ dengan tertancap Neural Compute Stick 2 serta saya menggunakan Mac OSx yang sudah terinstall OpenVINO sdk. Beberapa point yang akan kita lakukan adalah sebagai berikut
 
   * [Download Model YOLO3](#Download-Model-YOLO3)
   * [Convert Model YOLO3 ke dalam Model Inference](#Convert-Model-YOLO3-ke-dalam-Model-Inference)
@@ -105,7 +105,7 @@ Seperti yang diinfokan di atas, perintah di atas untuk membuat file `Protocol Bu
 Sampai dengan langkah ini model yang telah kita buat, sebenarnya sudah selesai untuk format modelnya tensorflow. Silakan ketika program di bawah ini untuk melakukan ujicoba model yang telah kita buat, kita akan menggunakan gambar berikut ini untuk dilakukan detection
 
 <div class="wp-block-image">
-  <figure class="aligncenter is-resized"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-input-1024x576.jpeg" alt="Input object detection" class="wp-image-398" width="768" height="432" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-input-1024x576.jpeg 1024w, https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-input-300x169.jpeg 300w, https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-input-768x432.jpeg 768w, https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-input.jpeg 1280w" sizes="(max-width: 768px) 100vw, 768px" /><figcaption>Input object detection</figcaption></figure>
+  <figure class="aligncenter is-resized"><img src="/assets/images/2019/07/OpenVINO-YOLO3-input-1024x576.jpeg" alt="Input object detection" class="wp-image-398" width="768" height="432" srcset="/assets/images/2019/07/OpenVINO-YOLO3-input-1024x576.jpeg 1024w, /assets/images/2019/07/OpenVINO-YOLO3-input-300x169.jpeg 300w, /assets/images/2019/07/OpenVINO-YOLO3-input-768x432.jpeg 768w, /assets/images/2019/07/OpenVINO-YOLO3-input.jpeg 1280w" sizes="(max-width: 768px) 100vw, 768px" /><figcaption>Input object detection</figcaption></figure>
 </div>
 
 <pre class="wp-block-code"><code>python3 demo.py --input_img ~/Desktop/OpenVINO-YOLO3-input.jpeg --output_img ~/Desktop/OpenVINO-YOLO3-output.jpeg --data_format NHWC</code></pre>
@@ -130,7 +130,7 @@ Ganti beberapa baris di atas menjadi seperti di bawah ini
 Setelah diganti kode di atas seharusnya tidak terjadi error kembali, hasilkan dari gambar input di atas kira-kira seperti di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter is-resized"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-output-1024x576.jpeg" alt="Output object detection" class="wp-image-399" width="768" height="432" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-output-1024x576.jpeg 1024w, https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-output-300x169.jpeg 300w, https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-output-768x432.jpeg 768w, https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-output.jpeg 1280w" sizes="(max-width: 768px) 100vw, 768px" /><figcaption>Output object detection</figcaption></figure>
+  <figure class="aligncenter is-resized"><img src="/assets/images/2019/07/OpenVINO-YOLO3-output-1024x576.jpeg" alt="Output object detection" class="wp-image-399" width="768" height="432" srcset="/assets/images/2019/07/OpenVINO-YOLO3-output-1024x576.jpeg 1024w, /assets/images/2019/07/OpenVINO-YOLO3-output-300x169.jpeg 300w, /assets/images/2019/07/OpenVINO-YOLO3-output-768x432.jpeg 768w, /assets/images/2019/07/OpenVINO-YOLO3-output.jpeg 1280w" sizes="(max-width: 768px) 100vw, 768px" /><figcaption>Output object detection</figcaption></figure>
 </div>
 
 #### Convert Model YOLO3 ke dalam Model Inference {#Convert-Model-YOLO3-ke-dalam-Model-Inference}
@@ -157,7 +157,7 @@ Jika ketika dijalankan mendapatai error seperti di bawahi ini, pastikan tensorfl
 Jika semua normal, outputnya ditunjukkan pada gambar di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter is-resized"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/07/OpenVINO-YOLO3-video.gif" alt="Output video object detection" class="wp-image-403" width="680" height="480" /><figcaption>Output video object detection</figcaption></figure>
+  <figure class="aligncenter is-resized"><img src="/assets/images/2019/07/OpenVINO-YOLO3-video.gif" alt="Output video object detection" class="wp-image-403" width="680" height="480" /><figcaption>Output video object detection</figcaption></figure>
 </div>
 
 Demikianlah tulisan saya mengenai object detection menggunakan model pre-trained yaitu YOLO3 pada OpenVINO, semoga bermanfaat dan tetap memotivasi temen-temen yang belajar OpenVINO. Kritik dan saran sangat diharapkan untuk meningkatkan kwalitas blog ini, happy coding. 🙂

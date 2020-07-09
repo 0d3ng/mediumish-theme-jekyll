@@ -24,7 +24,7 @@ tags:
   - xquartz
 ---
 Bismillah,  
-Pada artikel sebelumnya saya telah <a href="http://www.sinaungoding.com/wordpress/2019/03/29/installasi-raspberry-pi/" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">posting</a> langkah installasi sampai dengan akses melalui terminal. Pada kali ini saya akan mencoba akses melalui terminal juga tetapi versi desktopnya, jadi nanti seolah-olah kita menjalankan langsung raspberry di monitor komputer atau laptop kita. Di bawah ini adalah beberapa point yang akan kita bahas
+Pada artikel sebelumnya saya telah <a href="/installasi-raspberry-pi/" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">posting</a> langkah installasi sampai dengan akses melalui terminal. Pada kali ini saya akan mencoba akses melalui terminal juga tetapi versi desktopnya, jadi nanti seolah-olah kita menjalankan langsung raspberry di monitor komputer atau laptop kita. Di bawah ini adalah beberapa point yang akan kita bahas
 
   * [Cek GUI status raspberry](#cek-GUI-status-raspberry)
   * [Install xquartz](#install-xquartz)

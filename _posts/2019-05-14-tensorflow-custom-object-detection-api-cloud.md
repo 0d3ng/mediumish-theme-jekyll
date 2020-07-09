@@ -29,7 +29,7 @@ tags:
 Bismillah,  
 Gak papa ya judulnya menggunakan bahasa inggris, ke depan semoga konten juga bisa menggunakan bahasa inggris juga. Sebenarnya dari judul sudah kelihatan, yang akan kita lakukan adalah melakukan training data menggunakan cloud yaitu google colab. Google colab merupakan layanan google yang secara gratis untuk belajar machine learning berbasis cloud, kemudian dengan google colab kita juga tidak dikhawatirkan dengan spesifikasi komputer yang minim untuk melakukan training data karena yang cukup Anda butuhkan adalah koneksi internet. Bagi Anda yang sudah terbiasa menggunakan jupyter notebook akan sangat gampang jika menggunakannya, untuk lebih jelasnya bisa Anda baca-baca di website resminya di <a rel="noreferrer noopener" aria-label="sini (opens in a new tab)" href="https://colab.research.google.com/notebooks/welcome.ipynb" target="_blank">sini</a>. Sebelum Anda memulai sebaiknya hal-hal berikut ini wajib sudah dilakukan
 
-  * Mendaftar dan membuat project di google cloud platform. Bisa dibaca pada tulisan saya di <a rel="noreferrer noopener" aria-label="sini (opens in a new tab)" href="http://www.sinaungoding.com/wordpress/2019/04/28/cara-mendaftar-akun-di-google-cloud-storage/" target="_blank">sini</a>.
+  * Mendaftar dan membuat project di google cloud platform. Bisa dibaca pada tulisan saya di <a rel="noreferrer noopener" aria-label="sini (opens in a new tab)" href="/cara-mendaftar-akun-di-google-cloud-storage/" target="_blank">sini</a>.
   * Install Tensorflow Object Detection API. Sudah sangat lengkap di <a rel="noreferrer noopener" aria-label="sini (opens in a new tab)" href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md" target="_blank">sini</a> untuk step by stepnya.
   * Setting google cloud storage, karena nanti data-data akan disimpan di sana.
   * Install Google Cloud SDK, agar mudah melakukan perintah-perintah melalui komputer Anda. Dapat Anda temui proses instllasi tersebut di <a rel="noreferrer noopener" aria-label="sini (opens in a new tab)" href="https://cloud.google.com/sdk/docs/" target="_blank">sini</a>.
@@ -104,7 +104,7 @@ gsutil cp [path_file_config].config ${YOUR_GCS_BUCKET}/data/</code></pre>
 Strukur direktori yang terdapat di dalam Google Cloud Storage kira-kira seperti di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/05/Google-Cloud-Platform-e1557822465593.png" alt="Google Cloud Platform" class="wp-image-157" /><figcaption>Google Cloud Platform</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/05/Google-Cloud-Platform-e1557822465593.png" alt="Google Cloud Platform" class="wp-image-157" /><figcaption>Google Cloud Platform</figcaption></figure>
 </div>
 
 Satu file lagi yang dibutuhkan adalah file yaml untuk mendeskripsikan parameter-parameter ketika melakukan training. Contoh isi file tersebut adalah sebagai berikut
@@ -145,7 +145,7 @@ tensorboard --logdir=${YOUR_GCS_BUCKET}</code></pre>
 Kemudian buka browser Anda dengan URL _localhost:6060_, jika semuanya normal harusnya akan tampil seperti ditunjukkan pada gambar di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter is-resized"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/05/Tensorboard-1024x557.png" alt="Tensorboard" class="wp-image-158" width="729" height="396" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/05/Tensorboard-1024x557.png 1024w, https://www.sinaungoding.com/wp-content/uploads/2019/05/Tensorboard-300x163.png 300w, https://www.sinaungoding.com/wp-content/uploads/2019/05/Tensorboard-768x418.png 768w, https://www.sinaungoding.com/wp-content/uploads/2019/05/Tensorboard.png 1251w" sizes="(max-width: 729px) 100vw, 729px" /><figcaption>Tensorboard</figcaption></figure>
+  <figure class="aligncenter is-resized"><img src="/assets/images/2019/05/Tensorboard-1024x557.png" alt="Tensorboard" class="wp-image-158" width="729" height="396" srcset="/assets/images/2019/05/Tensorboard-1024x557.png 1024w, /assets/images/2019/05/Tensorboard-300x163.png 300w, /assets/images/2019/05/Tensorboard-768x418.png 768w, /assets/images/2019/05/Tensorboard.png 1251w" sizes="(max-width: 729px) 100vw, 729px" /><figcaption>Tensorboard</figcaption></figure>
 </div>
 
 Demikianlah tulisan saya mengenai training data object detection API tensorflow memanfaatkan layanana Google Cloud Platform, untuk file-file pendukung dapat diunduh di <a rel="noreferrer noopener" aria-label="sini (opens in a new tab)" href="https://github.com/0d3ng/tf-plate-detection-cloud.git" target="_blank">sini</a>. Semoga bermanfaat bagi temen-temen yang suka bermain dengan computer vision. Cheers! 🙂

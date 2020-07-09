@@ -26,7 +26,7 @@ tags:
   - spring boot
 ---
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/07/spring-boot-jdbc-1024x683.jpg" alt="" class="wp-image-411" /></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/07/spring-boot-jdbc-1024x683.jpg" alt="" class="wp-image-411" /></figure>
 </div>
 
 Bismillah,  

@@ -26,7 +26,7 @@ tags:
   - web
   - web services
 ---
-<figure class="wp-block-image"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/08/Web-Spring-Boot-Consume-API-1024x683.jpg" alt="" class="wp-image-465" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/08/Web-Spring-Boot-Consume-API-1024x683.jpg 1024w, https://www.sinaungoding.com/wp-content/uploads/2019/08/Web-Spring-Boot-Consume-API-300x200.jpg 300w, https://www.sinaungoding.com/wp-content/uploads/2019/08/Web-Spring-Boot-Consume-API-768x512.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure> 
+<figure class="wp-block-image"><img src="/assets/images/2019/08/Web-Spring-Boot-Consume-API-1024x683.jpg" alt="" class="wp-image-465" srcset="/assets/images/2019/08/Web-Spring-Boot-Consume-API-1024x683.jpg 1024w, /assets/images/2019/08/Web-Spring-Boot-Consume-API-300x200.jpg 300w, /assets/images/2019/08/Web-Spring-Boot-Consume-API-768x512.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure> 
 
 Bismillah,  
 Pada kesempatan yang lalu saya telah menulis tentang cara membuat aplikasi web menggunakan Spring Boot, pada kesempatan kali ini masih sama yaitu membangun aplikasi web juga menggunakan tool yang sama. Perbedaannya adalah jika yang sebelumnya manipulasi data dilakukan pada aplikasi tersebut, yang akan ditulis sekarang dihandle oleh web service. Beberapa point yang akan kita bahas adalah sebagai berikut
@@ -38,7 +38,7 @@ Pada kesempatan yang lalu saya telah menulis tentang cara membuat aplikasi web m
   * [Membuat View](#Membuat-View)
   * [Referensi](#Referensi)<figure class="wp-block-image">
 
-<img src="https://www.sinaungoding.com/wp-content/uploads/2019/08/Web-Thymeleaf-Spring-Boot2-1024x426.png" alt="" class="wp-image-451" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/08/Web-Thymeleaf-Spring-Boot2-1024x426.png 1024w, https://www.sinaungoding.com/wp-content/uploads/2019/08/Web-Thymeleaf-Spring-Boot2-300x125.png 300w, https://www.sinaungoding.com/wp-content/uploads/2019/08/Web-Thymeleaf-Spring-Boot2-768x319.png 768w, https://www.sinaungoding.com/wp-content/uploads/2019/08/Web-Thymeleaf-Spring-Boot2.png 1157w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>Tampilan Utama</figcaption></figure> 
+<img src="/assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-1024x426.png" alt="" class="wp-image-451" srcset="/assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-1024x426.png 1024w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-300x125.png 300w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2-768x319.png 768w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot2.png 1157w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>Tampilan Utama</figcaption></figure> 
 
 #### Konfigurasi Spring Boot {#Konfigurasi-Spring-Boot}
 

@@ -25,11 +25,11 @@ tags:
   - spring boot
 ---
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-Data-JPA-1024x683.jpg" alt="" class="wp-image-421" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-Data-JPA-1024x683.jpg 1024w, https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-Data-JPA-300x200.jpg 300w, https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-Data-JPA-768x512.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/07/Spring-Data-JPA-1024x683.jpg" alt="" class="wp-image-421" srcset="/assets/images/2019/07/Spring-Data-JPA-1024x683.jpg 1024w, /assets/images/2019/07/Spring-Data-JPA-300x200.jpg 300w, /assets/images/2019/07/Spring-Data-JPA-768x512.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 </div>
 
 Bismillah,  
-Postingan <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="https://www.sinaungoding.com/operasi-crud-menggunakan-spring-boot-jdbc2/" target="_blank">sebelumnya</a> sudah membahas mengenai operasi CRUD menggunakan Spring Boot JDBC, di sana kita sudah dimanjakan dengan template crud oleh Spring menggunakan class `JdbcTemplate` dan `JdbcDaoSupport`. Sebenarnya masih ada kekurangan, yaitu kita tetap harus menuliskan query ke dalam database. Dengan adanya kekurangan tersebut akan tersebut munculnya **Java Persistance API(JPA)**, ketika menggunakan JPA kita tidak membutuhakan query pada umumnya tetapi yang digunakan adalah query ke sebuah objek. Beberapa yang akan kita bahas adalah sebagai berikut
+Postingan <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/operasi-crud-menggunakan-spring-boot-jdbc2/" target="_blank">sebelumnya</a> sudah membahas mengenai operasi CRUD menggunakan Spring Boot JDBC, di sana kita sudah dimanjakan dengan template crud oleh Spring menggunakan class `JdbcTemplate` dan `JdbcDaoSupport`. Sebenarnya masih ada kekurangan, yaitu kita tetap harus menuliskan query ke dalam database. Dengan adanya kekurangan tersebut akan tersebut munculnya **Java Persistance API(JPA)**, ketika menggunakan JPA kita tidak membutuhakan query pada umumnya tetapi yang digunakan adalah query ke sebuah objek. Beberapa yang akan kita bahas adalah sebagai berikut
 
   * [Konfigurasi Spring Boot JPA](#Konfigurasi-Spring-Boot-JPA)
   * [Konfigurasi File Properties](#Konfigurasi-File-Properties)

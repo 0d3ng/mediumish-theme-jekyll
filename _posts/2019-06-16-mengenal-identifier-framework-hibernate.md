@@ -27,7 +27,7 @@ tags:
   - uuid
 ---
 Bismillah,  
-Jika pada artikel <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="https://www.sinaungoding.com/mengenal-framework-hibernate-java/" target="_blank">sebelumnya</a> kita telah berkenalan dengan framework hibernate, pada kesempatan kali ini kita akan belajar lebih dalam lagi yaitu tentang identifier atau jika dianotasikan menggunakan `"@Id".` Sebelumnya pernah disinggung sedikit tentang `@Id`, yaitu digunakan untuk primary key dalam sebuah entitas atau tabel jika pada database relational. Beberapa sifat dari identifier yaitu
+Jika pada artikel <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/mengenal-framework-hibernate-java/" target="_blank">sebelumnya</a> kita telah berkenalan dengan framework hibernate, pada kesempatan kali ini kita akan belajar lebih dalam lagi yaitu tentang identifier atau jika dianotasikan menggunakan `"@Id".` Sebelumnya pernah disinggung sedikit tentang `@Id`, yaitu digunakan untuk primary key dalam sebuah entitas atau tabel jika pada database relational. Beberapa sifat dari identifier yaitu
 
   * `UNIQUE`; nilainya harus berbeda untuk masing-masing row
   * `NOT NULL`; nilainya tidak boleh kosong

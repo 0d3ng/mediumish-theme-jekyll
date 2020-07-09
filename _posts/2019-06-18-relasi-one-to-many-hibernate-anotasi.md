@@ -27,7 +27,7 @@ tags:
   - unidirectional
 ---
 Bismillah,  
-Artikel kali ini adalah lanjutan dari <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="https://www.sinaungoding.com/relasi-one-to-one-hibernate-anotasi/" target="_blank">sebelumnya</a> yang masih membahas mengenai relasi/asosiasi pada framework hibernate, yaitu one to many atau disimbolkan anotasi `@OneToMany`. Asosiasi ini dimana sebuah entitas dapat menerima atau meng-set informasi dari banyak instance dari entitas, sebagai contoh misalkan relasi yang terjadi antara entitas `Mahasiswa` dengan entitas `Mata Kuliah`. Misalkan ada si fulan yang mengambil matakuliah algoritma dan pemrograman, praktikum algoritma dan pemrograman, struktur data, praktikum struktur data, dan agama. Sama halnya dengan asosiasi yang sebelumnya telah kita pelajari, `@OneToMany` juga memiliki model `Unidirectional` dan `BidiRectional`. Beberapa penerapan `@OneToMany` yang dapat diterapkan menggunakan hibernate adalah sebagai berikut
+Artikel kali ini adalah lanjutan dari <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/relasi-one-to-one-hibernate-anotasi/" target="_blank">sebelumnya</a> yang masih membahas mengenai relasi/asosiasi pada framework hibernate, yaitu one to many atau disimbolkan anotasi `@OneToMany`. Asosiasi ini dimana sebuah entitas dapat menerima atau meng-set informasi dari banyak instance dari entitas, sebagai contoh misalkan relasi yang terjadi antara entitas `Mahasiswa` dengan entitas `Mata Kuliah`. Misalkan ada si fulan yang mengambil matakuliah algoritma dan pemrograman, praktikum algoritma dan pemrograman, struktur data, praktikum struktur data, dan agama. Sama halnya dengan asosiasi yang sebelumnya telah kita pelajari, `@OneToMany` juga memiliki model `Unidirectional` dan `BidiRectional`. Beberapa penerapan `@OneToMany` yang dapat diterapkan menggunakan hibernate adalah sebagai berikut
 
   * `<a href="#@OneToMany-Unidirectional">@OneToMany</a>` [Unidirectional](#@OneToMany-Unidirectional)
   * `<a href="#@OneToMany-Unidirectional-Join-Kolom">@OneToMany</a>` [Unidirectional Join Kolom](#@OneToMany-Unidirectional-Join-Kolom)
@@ -39,7 +39,7 @@ Artikel kali ini adalah lanjutan dari <a rel="noreferrer noopener" aria-label="s
 `@OneToMany` Unidirectional yang paling sederhana, ditampilkan seperti pada relasi tabel pada gambar di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-many.png" alt="One to many relational unidirectional" class="wp-image-276" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-many.png 712w, https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-many-300x58.png 300w" sizes="(max-width: 712px) 100vw, 712px" /><figcaption>One to many relational unidirectional</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/one-to-many.png" alt="One to many relational unidirectional" class="wp-image-276" srcset="/assets/images/2019/06/one-to-many.png 712w, /assets/images/2019/06/one-to-many-300x58.png 300w" sizes="(max-width: 712px) 100vw, 712px" /><figcaption>One to many relational unidirectional</figcaption></figure>
 </div>
 
 Jika kita mapping ke dalam class Java yang perlu dilakukan adalah menuliskan kode seperti ini
@@ -87,7 +87,7 @@ Wow, banyak sekali query insert yang dieksekusi karena ada 3 tabel yang harus di
 Model lain `Unidirectional` yang lain adalah Join kolom, anotasi yang digunakan setelah `@OneToMany` adalah `@JoinColumn`. Ketika menggunakan join kolom berarti akan ada kolom salah satu entitas menjadi foreign key pada entitas yang lain. Relasi tabel pada database relational ditunjukkan pada gambar di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-many-jointcolumn.png" alt="One to many relational unidirectional join column" class="wp-image-277" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-many-jointcolumn.png 423w, https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-many-jointcolumn-300x108.png 300w" sizes="(max-width: 423px) 100vw, 423px" /><figcaption>One to many relational unidirectional join column</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/one-to-many-jointcolumn.png" alt="One to many relational unidirectional join column" class="wp-image-277" srcset="/assets/images/2019/06/one-to-many-jointcolumn.png 423w, /assets/images/2019/06/one-to-many-jointcolumn-300x108.png 300w" sizes="(max-width: 423px) 100vw, 423px" /><figcaption>One to many relational unidirectional join column</figcaption></figure>
 </div>
 
 Mapping class Java untuk kedua entitas di atas adalah sebagai berikut
@@ -165,7 +165,7 @@ Dari kode di atas terdapat baris `@JoinTable(name = "mhs_mk", joinColumns = @Joi
 Model jenis ini merupakan relasi yang paling efisien untuk dapat digunakan pada aplikasi yang akan Anda bangun, jika pada ERD seperti di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-many-bidi.png" alt="One to many relational bidirectional" class="wp-image-278" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-many-bidi.png 407w, https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-many-bidi-300x109.png 300w" sizes="(max-width: 407px) 100vw, 407px" /><figcaption>One to many relational bidirectional</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/one-to-many-bidi.png" alt="One to many relational bidirectional" class="wp-image-278" srcset="/assets/images/2019/06/one-to-many-bidi.png 407w, /assets/images/2019/06/one-to-many-bidi-300x109.png 300w" sizes="(max-width: 407px) 100vw, 407px" /><figcaption>One to many relational bidirectional</figcaption></figure>
 </div>
 
 Gambar ERD di atas memang mirip dengan anotasi menggunakan `@OneToMany Unidirectional` join kolom, perbedaaanya adalah pada class Java mappingnya. Mapping tersebut dapat dilihat pada potongan kode di bawah ini

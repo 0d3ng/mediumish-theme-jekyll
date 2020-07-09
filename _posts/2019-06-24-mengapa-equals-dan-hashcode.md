@@ -24,7 +24,7 @@ tags:
   - java
 ---
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/header-equals-hashcode-e1561350652107-1024x474.jpg" alt="Header equals hashcode" class="wp-image-362" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/06/header-equals-hashcode-e1561350652107-1024x474.jpg 1024w, https://www.sinaungoding.com/wp-content/uploads/2019/06/header-equals-hashcode-e1561350652107-300x139.jpg 300w, https://www.sinaungoding.com/wp-content/uploads/2019/06/header-equals-hashcode-e1561350652107-768x355.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/header-equals-hashcode-e1561350652107-1024x474.jpg" alt="Header equals hashcode" class="wp-image-362" srcset="/assets/images/2019/06/header-equals-hashcode-e1561350652107-1024x474.jpg 1024w, /assets/images/2019/06/header-equals-hashcode-e1561350652107-300x139.jpg 300w, /assets/images/2019/06/header-equals-hashcode-e1561350652107-768x355.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 </div>
 
 Bismillah,  

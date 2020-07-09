@@ -27,7 +27,7 @@ tags:
   - unidirectional
 ---
 Bismillah,  
-Jika pada artikel <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="https://www.sinaungoding.com/mengenal-identifier-framework-hibernate/" target="_blank">sebelumnya</a> kita telah membahas mengenai identifier di hibernate, pada kesempatan ini akan belajar mengenai relasi atau sering disebut assosiasi. Aplikasi yang akan kita bangun mustahil jika entitas tidak berelasi dengan entitas yang lain, walaupun aplikasi yang sederhana pun. Bisa saja aplikasi yang kita bangun hanya terdapat 1 entitas atau tidak ada relasi antar entitas, tapi fungsi aplikasi tidak akan maksimal.
+Jika pada artikel <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/mengenal-identifier-framework-hibernate/" target="_blank">sebelumnya</a> kita telah membahas mengenai identifier di hibernate, pada kesempatan ini akan belajar mengenai relasi atau sering disebut assosiasi. Aplikasi yang akan kita bangun mustahil jika entitas tidak berelasi dengan entitas yang lain, walaupun aplikasi yang sederhana pun. Bisa saja aplikasi yang kita bangun hanya terdapat 1 entitas atau tidak ada relasi antar entitas, tapi fungsi aplikasi tidak akan maksimal.
 
 Tujuan dari relasi antar entitas adalah agar bisa saling bertukar informasi, ada dua model relasi yang sering kita dengar yaitu `Unidirectional dan Bidirectional`. `Unidirectional` adalah hanya akan ada salah satu entitas yang bertukar informasi, sebaliknya `Bidirectional` berarti antar entitas bisa saling bertukar informasi. Relasi yang dapat digunakan adalah `OneToOne, OneToMany, dan ManyToMany`. Tetapi pada kesempatan ini yang akan kita bahas adalah relasi `OneToOne`, pokok bahasan yang dapat disajikan adalah sebagai berikut
 
@@ -41,7 +41,7 @@ Tujuan dari relasi antar entitas adalah agar bisa saling bertukar informasi, ada
 Salah satu model yang digunakan adalah join kolom, pada hibernate menggunakan anotasi `@JoinColumn` setelah anotasi `@OneToOne`. Misalkan kita punya relasi di database seperti gambar di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-one.png" alt="One to one relational" class="wp-image-268" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-one.png 431w, https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-one-300x214.png 300w" sizes="(max-width: 431px) 100vw, 431px" /><figcaption>One to one relational join kolom</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/one-to-one.png" alt="One to one relational" class="wp-image-268" srcset="/assets/images/2019/06/one-to-one.png 431w, /assets/images/2019/06/one-to-one-300x214.png 300w" sizes="(max-width: 431px) 100vw, 431px" /><figcaption>One to one relational join kolom</figcaption></figure>
 </div>
 
 Dari gambar di atas akan kita coba mapping ke dalam class Java seperti di bawah ini menggunakan anotasi `@OneToOne` dengan model `@JoinColumn`.
@@ -81,7 +81,7 @@ Contoh di atas adalah model relasi `Unidirectional`, dimana class `Alamat` menja
 Jika pada contoh sebelumnya adalah model relasi `Unidirectional`, kita akan coba untuk contoh yang `Bidirectional`. Relasi tabel pada database kira-kira seperti ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-one-bidi.png" alt="One to one relational bidirectional" class="wp-image-272" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-one-bidi.png 403w, https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-one-bidi-300x157.png 300w" sizes="(max-width: 403px) 100vw, 403px" /><figcaption>One to one relational bidirectional</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/one-to-one-bidi.png" alt="One to one relational bidirectional" class="wp-image-272" srcset="/assets/images/2019/06/one-to-one-bidi.png 403w, /assets/images/2019/06/one-to-one-bidi-300x157.png 300w" sizes="(max-width: 403px) 100vw, 403px" /><figcaption>One to one relational bidirectional</figcaption></figure>
 </div>
 
 Relasi tabel di atas one to one bidirectional karena satu mahasiswa hanya memiliki satu alamat, alamat bergantung dengan mahasiswa artinya tidak mungkin ada alamat tanpa ada mahasiswa. Setelah kita mapping ke dalam class Java menggunakan hibernate, yang perlu dilakukan adalah sebagai berikut
@@ -218,7 +218,7 @@ Pada unit test terdapat 1 baris perintah `m.setAlamat(a)` untuk set entitas Maha
 Sesuai dengan namanya relasi `@OneToOne` ini berarti akan membuat sebuah tabel bantu untuk menampung primary key masing-masing entitas. Ilustrasi join tabel digambarkan seperti di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-one-jointable.png" alt="One to one join table" class="wp-image-271" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-one-jointable.png 603w, https://www.sinaungoding.com/wp-content/uploads/2019/06/one-to-one-jointable-300x93.png 300w" sizes="(max-width: 603px) 100vw, 603px" /><figcaption>One to one join table</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/one-to-one-jointable.png" alt="One to one join table" class="wp-image-271" srcset="/assets/images/2019/06/one-to-one-jointable.png 603w, /assets/images/2019/06/one-to-one-jointable-300x93.png 300w" sizes="(max-width: 603px) 100vw, 603px" /><figcaption>One to one join table</figcaption></figure>
 </div>
 
 Kemudian kita coba mapping ke dalam class Java menggunakan hibernate anotasi yang merepresentasikan tabel relational seperti di atas.

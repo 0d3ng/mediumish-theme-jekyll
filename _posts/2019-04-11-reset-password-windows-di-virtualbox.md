@@ -54,19 +54,19 @@ Seperti dijelaskan di atas bahwa software ini adalah live distribution linux seh
 Silakan buka VirtualBox Anda selanjutnya pilih windows yang akan direset &#8211; _Settings_ &#8211; _Storage_. 
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/TRK-e1554968267453.png" alt="" class="wp-image-102" /><figcaption>Tampilan ketika akan menambahkan file iso</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/TRK-e1554968267453.png" alt="" class="wp-image-102" /><figcaption>Tampilan ketika akan menambahkan file iso</figcaption></figure>
 </div>
 
 Kemudian pada bagian _Controller SATA_, _Adds optical drive_ &#8211; pilih _choose disk_ &#8211; klik tombol _Add_, silakan cari file iso _Trinity Rescue Kit_. Jika sudah ketemu, silakan klik tombol _Choose_.
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/TRK-1-e1554968454257.png" alt="" class="wp-image-103" /><figcaption>Dialog browse file iso</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/TRK-1-e1554968454257.png" alt="" class="wp-image-103" /><figcaption>Dialog browse file iso</figcaption></figure>
 </div>
 
 Seharusnya nanti akan ditambahkan pada daftar Controller SATA seperti ditunjukkan pada gambar di bawah ini, pastikan SATA Port yang terkecil adalah file iso _Trinity Rescue Kit_ agar bisa boot langsung dari file iso tersebut.
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/TRK-2-e1554968741853.png" alt="" class="wp-image-104" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/04/TRK-2-e1554968741853.png 398w, https://www.sinaungoding.com/wp-content/uploads/2019/04/TRK-2-e1554968741853-300x252.png 300w" sizes="(max-width: 398px) 100vw, 398px" /><figcaption>File iso masuk ke daftar controller: SATA</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/TRK-2-e1554968741853.png" alt="" class="wp-image-104" srcset="/assets/images/2019/04/TRK-2-e1554968741853.png 398w, /assets/images/2019/04/TRK-2-e1554968741853-300x252.png 300w" sizes="(max-width: 398px) 100vw, 398px" /><figcaption>File iso masuk ke daftar controller: SATA</figcaption></figure>
 </div>
 
 #### Menjalankan Trinity Rescue Kit {#menjalankan-trinity-rescue-kit}
@@ -74,25 +74,25 @@ Seharusnya nanti akan ditambahkan pada daftar Controller SATA seperti ditunjukka
 Selanjutnya jalankan windows Anda melalui tombol Start, seharusnya nanti akan muncul tampilan seperti di bawah ini jika berhasil boot ke _Trinity Rescue Kit._
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/TRK-3-e1554974423337.png" alt="" class="wp-image-113" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/04/TRK-3-e1554974423337.png 475w, https://www.sinaungoding.com/wp-content/uploads/2019/04/TRK-3-e1554974423337-300x205.png 300w" sizes="(max-width: 475px) 100vw, 475px" /><figcaption>Menu utama TRK</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/TRK-3-e1554974423337.png" alt="" class="wp-image-113" srcset="/assets/images/2019/04/TRK-3-e1554974423337.png 475w, /assets/images/2019/04/TRK-3-e1554974423337-300x205.png 300w" sizes="(max-width: 475px) 100vw, 475px" /><figcaption>Menu utama TRK</figcaption></figure>
 </div>
 
 Setelah masuk ke dalam menu _Trinity Rescue Kit,_ pilih menu _windows password resetting_ seperti pada gambar di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/TRK-4-e1554975097189.png" alt="" class="wp-image-111" /><figcaption>Windows password resetting</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/TRK-4-e1554975097189.png" alt="" class="wp-image-111" /><figcaption>Windows password resetting</figcaption></figure>
 </div>
 
 Kemudian akan muncul kembali menu seperti di bawah ini, pilihlah _Reset password on build-in Administrator (default action)_ jika Anda mengaktifkan akun Administrator. Tetapi pada kesempatan ini yang akan kita pilih adalah _Winpass with prompt for username first_, masukan username Anda dan akan muncul informasi yang menginfokan bahwa file installasi windows ditemukan, silakan dipilih sesuai dengan yang terinstall di VirtualBox Anda. Jika ditempat saya di /sd2/windows atau 1.
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/TK-9-e1554974599775.png" alt="" class="wp-image-112" /><figcaption>Winpass with prompt for username first</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/TK-9-e1554974599775.png" alt="" class="wp-image-112" /><figcaption>Winpass with prompt for username first</figcaption></figure>
 </div>
 
 Akan muncul informasi-informasi terkait dengan pengguna yang terdaftar pada windows Anda dan juga informasi operasi-operasi yang dapat dilakukan, misalkan seperti _Clear (blank) user password_. Silakan pilih _Clear (blank) user password_ untuk menghapus password Anda, jika berhasil tampilannya adalah seperti di bawah ini. Selanjutnya silakan Anda masuk ke Windows Anda. 
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/TK-10-e1554974729728.png" alt="" class="wp-image-110" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/04/TK-10-e1554974729728.png 519w, https://www.sinaungoding.com/wp-content/uploads/2019/04/TK-10-e1554974729728-300x203.png 300w" sizes="(max-width: 519px) 100vw, 519px" /><figcaption>Clear user password selesai</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/TK-10-e1554974729728.png" alt="" class="wp-image-110" srcset="/assets/images/2019/04/TK-10-e1554974729728.png 519w, /assets/images/2019/04/TK-10-e1554974729728-300x203.png 300w" sizes="(max-width: 519px) 100vw, 519px" /><figcaption>Clear user password selesai</figcaption></figure>
 </div>
 
 #### Command Trinity Rescue Kit {#command-trinity-rescue-kit}

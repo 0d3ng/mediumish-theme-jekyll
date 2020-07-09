@@ -105,7 +105,7 @@ for image_name in sorted(os.listdir(path_images)):
 Jika dijalankan source code di atas hasilnya seperti di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/05/object-detection-e1556770806437.png" alt="" class="wp-image-146" /><figcaption>Object Detection</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/05/object-detection-e1556770806437.png" alt="" class="wp-image-146" /><figcaption>Object Detection</figcaption></figure>
 </div>
 
 Demikian artikel saya mengenai object detection menggunakan OpenCV dengan model pre-trained, source code lengkap dapat Anda dapatkan di <a href="https://github.com/0d3ng/tf-object-detection.git" target="_blank" rel="noreferrer noopener" aria-label="sini (opens in a new tab)">sini</a>. Semoga tulisan saya bermanfaat bagi pecinta computer vision, ditunggu artikel yang selanjutnya ya. cheeers! 🙂

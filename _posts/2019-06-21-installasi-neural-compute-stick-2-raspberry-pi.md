@@ -24,7 +24,7 @@ tags:
   - raspberry-pi
   - vpu
 ---
-<figure class="wp-block-image"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/OpenVino-1-e1561109774616-1024x456.jpg" alt="Persiapan peralatan" class="wp-image-318" /><figcaption>Neural Compute Stick 2</figcaption></figure> 
+<figure class="wp-block-image"><img src="/assets/images/2019/06/OpenVino-1-e1561109774616-1024x456.jpg" alt="Persiapan peralatan" class="wp-image-318" /><figcaption>Neural Compute Stick 2</figcaption></figure> 
 
 Bismillah,  
 Neural Computer Stick atau yang biasa disingkat NCS merupakan perangkat usb keluaran intel yang bertujuan untuk mempercepat proses deploy dan prototype aplikasi Deep Neural Network(DNN), intel mengatakan di dalam perangkat ini dibenamkan sebuah Intel® Movidius™ Myriad™ X VPU. Versi NCS saat ini 2, dikabarkan 8x lebih cepat dari pendahulunya Intel® Movidius™ Neural Compute Stick (NCS).
@@ -212,7 +212,7 @@ wget --no-check-certificate https://download.01.org/opencv/2019/open_model_zoo/R
 Selajutnya siapkan dataset yang akan dilakukan ujicoba, kemudian dapat menjalankan perintah di bawah ini. Dataset yang digunakan dalam contoh adalah sebagai berikut
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/OpenVino-3.jpeg" alt="Input gambar" class="wp-image-373" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/06/OpenVino-3.jpeg 474w, https://www.sinaungoding.com/wp-content/uploads/2019/06/OpenVino-3-300x184.jpeg 300w" sizes="(max-width: 474px) 100vw, 474px" /><figcaption>Input gambar</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/OpenVino-3.jpeg" alt="Input gambar" class="wp-image-373" srcset="/assets/images/2019/06/OpenVino-3.jpeg 474w, /assets/images/2019/06/OpenVino-3-300x184.jpeg 300w" sizes="(max-width: 474px) 100vw, 474px" /><figcaption>Input gambar</figcaption></figure>
 </div>
 
 <pre class="wp-block-code"><code>./armv7l/Release/object_detection_sample_ssd -m face-detection-adas-0001.xml -d MYRIAD -i linux-torvald.jpeg</code></pre>
@@ -245,7 +245,7 @@ Throughput: 9.2355 FPS
 File `linux-torvald.jpeg` silakan disesuaikan, fungsi perintah tersebut untuk melakukan deteksi sebuah wajah dari sebuah citra gambar seseorang. Selanjutnya dalam direktori yang sama akan menghasilkan file `out_0.bmp`, jika dilihat gambar tersebut pada bagian wajah ada sebuah persegi berwarna ungu. Kira-kira gambar yang dihasilkan adalah sebagai berikut
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/OpenVino-2.png" alt="Hasil face detection OpenVINO" class="wp-image-331" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/06/OpenVino-2.png 474w, https://www.sinaungoding.com/wp-content/uploads/2019/06/OpenVino-2-300x184.png 300w" sizes="(max-width: 474px) 100vw, 474px" /><figcaption>Hasil face detection OpenVINO</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/OpenVino-2.png" alt="Hasil face detection OpenVINO" class="wp-image-331" srcset="/assets/images/2019/06/OpenVino-2.png 474w, /assets/images/2019/06/OpenVino-2-300x184.png 300w" sizes="(max-width: 474px) 100vw, 474px" /><figcaption>Hasil face detection OpenVINO</figcaption></figure>
 </div>
 
 #### Menjalankan Inference Engine Face Detection OpenCV {#Menjalankan-Inference-Engine-Face-Detection-OpenCV}

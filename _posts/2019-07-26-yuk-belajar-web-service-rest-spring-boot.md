@@ -27,7 +27,7 @@ tags:
   - web services
 ---
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/07/Web-Service-Spring-Boot-1024x684.jpg" alt="" class="wp-image-427" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/07/Web-Service-Spring-Boot-1024x684.jpg 1024w, https://www.sinaungoding.com/wp-content/uploads/2019/07/Web-Service-Spring-Boot-300x200.jpg 300w, https://www.sinaungoding.com/wp-content/uploads/2019/07/Web-Service-Spring-Boot-768x513.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/07/Web-Service-Spring-Boot-1024x684.jpg" alt="" class="wp-image-427" srcset="/assets/images/2019/07/Web-Service-Spring-Boot-1024x684.jpg 1024w, /assets/images/2019/07/Web-Service-Spring-Boot-300x200.jpg 300w, /assets/images/2019/07/Web-Service-Spring-Boot-768x513.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 </div>
 
 Bismillah,  

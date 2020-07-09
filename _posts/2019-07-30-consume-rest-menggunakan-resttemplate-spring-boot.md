@@ -27,11 +27,11 @@ tags:
   - web services
 ---
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/07/REST-Client-1024x683.jpg" alt="" class="wp-image-435" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/07/REST-Client-1024x683.jpg 1024w, https://www.sinaungoding.com/wp-content/uploads/2019/07/REST-Client-300x200.jpg 300w, https://www.sinaungoding.com/wp-content/uploads/2019/07/REST-Client-768x512.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/07/REST-Client-1024x683.jpg" alt="" class="wp-image-435" srcset="/assets/images/2019/07/REST-Client-1024x683.jpg 1024w, /assets/images/2019/07/REST-Client-300x200.jpg 300w, /assets/images/2019/07/REST-Client-768x512.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 </div>
 
 Bismillah,  
-Pada kesempatan <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="https://www.sinaungoding.com/yuk-belajar-web-service-rest-spring-boot/" target="_blank">sebelumnya</a> saya telah posting Web Service REST menggunakan Spring Boot, di tulisan ini saya akan coba gimana membuat REST client dan tentunya menggunakan Spring Boot. Walaupun sebenarnya bisa dicoba dengan mudah menggunakan tool yang sudah ada seperti browser, curl, ataupun yang lebih cantik menggunakan Postman. Tetapi tidak salahnya kita coba implementasikan Web Service REST client menggunakan Java. Beberapa point yang akan kita bahas adalah sebagai berikut
+Pada kesempatan <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/yuk-belajar-web-service-rest-spring-boot/" target="_blank">sebelumnya</a> saya telah posting Web Service REST menggunakan Spring Boot, di tulisan ini saya akan coba gimana membuat REST client dan tentunya menggunakan Spring Boot. Walaupun sebenarnya bisa dicoba dengan mudah menggunakan tool yang sudah ada seperti browser, curl, ataupun yang lebih cantik menggunakan Postman. Tetapi tidak salahnya kita coba implementasikan Web Service REST client menggunakan Java. Beberapa point yang akan kita bahas adalah sebagai berikut
 
   * [Konfigurasi Spring Boot](#Konfigurasi-Spring-Boot)
   * [Membuat Entitas](#Membuat-Entitas)

@@ -25,11 +25,11 @@ tags:
   - spring boot
 ---
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/07/spring-boot-logo.png" alt="Spring Boot" class="wp-image-378" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/07/spring-boot-logo.png 600w, https://www.sinaungoding.com/wp-content/uploads/2019/07/spring-boot-logo-300x158.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/07/spring-boot-logo.png" alt="Spring Boot" class="wp-image-378" srcset="/assets/images/2019/07/spring-boot-logo.png 600w, /assets/images/2019/07/spring-boot-logo-300x158.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
 </div>
 
 Bismillah,  
-Pada kesempatan kali ini saya akan menuliskan artikel tentang Spring Boot karena setelah beberapa lama tidak menulis lagi karena ada urusan kampus. Spring Boot merupakan framework yang sangat penting dipelajari apalagi Anda ingin menjadi seorang maniac Java, jika pada pada postingan lalu saya sering membahas <a rel="noreferrer noopener" aria-label="hibernate (opens in a new tab)" href="https://www.sinaungoding.com/validasi-menggunakan-hibernate-validator/" target="_blank">hibernate</a> seharusnya setelah mempelajari Spring Boot skill kita akan meningkat untuk membuat sebuah aplikasi Java berbasis Spring Boot.
+Pada kesempatan kali ini saya akan menuliskan artikel tentang Spring Boot karena setelah beberapa lama tidak menulis lagi karena ada urusan kampus. Spring Boot merupakan framework yang sangat penting dipelajari apalagi Anda ingin menjadi seorang maniac Java, jika pada pada postingan lalu saya sering membahas <a rel="noreferrer noopener" aria-label="hibernate (opens in a new tab)" href="/validasi-menggunakan-hibernate-validator/" target="_blank">hibernate</a> seharusnya setelah mempelajari Spring Boot skill kita akan meningkat untuk membuat sebuah aplikasi Java berbasis Spring Boot.
 
 Tetapi sebelum lebih jauh mempelajari Spring Boot, sebenarnya Spring Boot sendiri adalah salah satu framework Spring dengan less konfigurasi ketika akan membangun aplikasi Java. Sementara Spring sendiri feature core-nya yang terkenal adalah `depedency injection`, spring menyediakan resource berupa objek tanpa kita membuat secara manual. Beberapa point yang akan kita bahas adalah sebagai berikut
 
@@ -42,7 +42,7 @@ Tetapi sebelum lebih jauh mempelajari Spring Boot, sebenarnya Spring Boot sendir
 
 Untuk dapat memulai project Spring Boot dengan `Spring Initializr`, langkah awal yang dapat dilakukan adalah melakukan konfigurasi melalui browser. Silakan menuju ke halaman website <a rel="noreferrer noopener" aria-label="ini (opens in a new tab)" href="https://start.spring.io/" target="_blank">ini</a>. Kira-kira tampilannya adalah sebagai berikut<figure class="wp-block-image is-resized">
 
-<img src="https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-01.png" alt="Spring Initializr Browser" class="wp-image-380" width="602" height="503" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-01.png 802w, https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-01-300x251.png 300w, https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-01-768x642.png 768w" sizes="(max-width: 602px) 100vw, 602px" /> <figcaption>Spring Initializr Browser</figcaption></figure> 
+<img src="/assets/images/2019/07/Spring-boot-01.png" alt="Spring Initializr Browser" class="wp-image-380" width="602" height="503" srcset="/assets/images/2019/07/Spring-boot-01.png 802w, /assets/images/2019/07/Spring-boot-01-300x251.png 300w, /assets/images/2019/07/Spring-boot-01-768x642.png 768w" sizes="(max-width: 602px) 100vw, 602px" /> <figcaption>Spring Initializr Browser</figcaption></figure> 
 
 Dari tampilan di atas ada beberapa inputan yang perlu diisi ketika akan membuat sebuah projek menggunakan Spring Boot, dijelaskan seperti di bawah ini
 
@@ -53,7 +53,7 @@ Dari tampilan di atas ada beberapa inputan yang perlu diisi ketika akan membuat 
   * `Depedencies`; library-library yang dibutuhkan, silakan ketikkan nama library yang dibutuhkan kemudian tambahkan. Sebenarnya untuk menambahkan setelah dari langkah ini juga bisa, tambahkan di file `pom.xml` jika menggunakan Maven.
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-04.png" alt="Spring Initializr Browser(2)" class="wp-image-383" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-04.png 431w, https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-04-300x235.png 300w" sizes="(max-width: 431px) 100vw, 431px" /><figcaption>Spring Initializr Browser(2)</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/07/Spring-boot-04.png" alt="Spring Initializr Browser(2)" class="wp-image-383" srcset="/assets/images/2019/07/Spring-boot-04.png 431w, /assets/images/2019/07/Spring-boot-04-300x235.png 300w" sizes="(max-width: 431px) 100vw, 431px" /><figcaption>Spring Initializr Browser(2)</figcaption></figure>
 </div>
 
 Untuk konfigurasi yang lebih lagi, silakan pilih `Options` sehingga tampilannya dapat dilihat seperti pada gambar di atas. Beberapa pointnya kira-kira seperti berikut
@@ -65,11 +65,11 @@ Untuk konfigurasi yang lebih lagi, silakan pilih `Options` sehingga tampilannya 
 
 Selain `Spring Initializr` versi browser, sebenarnya tersedia juga untuk versi desktop yaitu pada editor. Pada kesempatan ini saya menggunakan editor Intellij IDEA versi full menggunakan akun akademik. Silakan buat projek baru kemudian pilih `Spring Initializr`<figure class="wp-block-image is-resized">
 
-<img src="https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-02.png" alt="Spring Initializr Editor(1)" class="wp-image-381" width="659" height="421" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-02.png 879w, https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-02-300x191.png 300w, https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-02-768x490.png 768w" sizes="(max-width: 659px) 100vw, 659px" /> <figcaption>Spring Initializr Editor(1)</figcaption></figure> 
+<img src="/assets/images/2019/07/Spring-boot-02.png" alt="Spring Initializr Editor(1)" class="wp-image-381" width="659" height="421" srcset="/assets/images/2019/07/Spring-boot-02.png 879w, /assets/images/2019/07/Spring-boot-02-300x191.png 300w, /assets/images/2019/07/Spring-boot-02-768x490.png 768w" sizes="(max-width: 659px) 100vw, 659px" /> <figcaption>Spring Initializr Editor(1)</figcaption></figure> 
 
 Sebenarnya mirip dengan Spring Initializr versi browser untuk property-property yang perlu kita sesuaikan, yang berbeda terkait dengan `Version` untuk menginfokan versi dari aplikasi.<figure class="wp-block-image is-resized">
 
-<img src="https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-03.png" alt="Spring Initializr Editor(2)" class="wp-image-382" width="660" height="420" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-03.png 880w, https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-03-300x191.png 300w, https://www.sinaungoding.com/wp-content/uploads/2019/07/Spring-boot-03-768x489.png 768w" sizes="(max-width: 660px) 100vw, 660px" /> <figcaption>Spring Initializr Editor(2)</figcaption></figure> 
+<img src="/assets/images/2019/07/Spring-boot-03.png" alt="Spring Initializr Editor(2)" class="wp-image-382" width="660" height="420" srcset="/assets/images/2019/07/Spring-boot-03.png 880w, /assets/images/2019/07/Spring-boot-03-300x191.png 300w, /assets/images/2019/07/Spring-boot-03-768x489.png 768w" sizes="(max-width: 660px) 100vw, 660px" /> <figcaption>Spring Initializr Editor(2)</figcaption></figure> 
 
 Terkait dengan depedensi silakan dipilih sesuai dengan kebutuhan Anda, misalkan jika ingin menggunakan hibernate bisa dipilih pada kategori `SQL-Spring Data JPA` atau dengan mengetikkan pada icon cari seperti pada gambar di atas.
 

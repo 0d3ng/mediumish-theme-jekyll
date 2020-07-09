@@ -26,11 +26,11 @@ tags:
   - tensorflow
 ---
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/vino-header-e1561307419686-1024x453.jpg" alt="Object detection" class="wp-image-356" /></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/vino-header-e1561307419686-1024x453.jpg" alt="Object detection" class="wp-image-356" /></figure>
 </div>
 
 Bismillah,  
-Jika pada postingan <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="https://www.sinaungoding.com/installasi-neural-compute-stick-2-raspberry-pi/" target="_blank">sebelumnya</a> saya telah membahas mengenai pengenalan tentang Neural Compute Stick dan platfrom OpenVINO, sekarang akan dibahas lebih jauh lagi terutama pemanfaatan OpenVINO untuk kebutuhan computer vision. Kita akan mencoba menggunakan model yang dibuat oleh tensorflow, sayangnya tidak bisa langsung digunakan harus diubah dulu ke dalam Intermediate Representation(IR) model OpenVINO untuk menghasilkan file \*.bin dan \*.xml. Untuk melakukannnya menggunakan tool yang terdapat di dalam OpenVINO toolkit, dapat ada unduh di <a rel="noreferrer noopener" aria-label="sini (opens in a new tab)" href="https://software.intel.com/en-us/openvino-toolkit/choose-download" target="_blank">sini</a>.
+Jika pada postingan <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/installasi-neural-compute-stick-2-raspberry-pi/" target="_blank">sebelumnya</a> saya telah membahas mengenai pengenalan tentang Neural Compute Stick dan platfrom OpenVINO, sekarang akan dibahas lebih jauh lagi terutama pemanfaatan OpenVINO untuk kebutuhan computer vision. Kita akan mencoba menggunakan model yang dibuat oleh tensorflow, sayangnya tidak bisa langsung digunakan harus diubah dulu ke dalam Intermediate Representation(IR) model OpenVINO untuk menghasilkan file \*.bin dan \*.xml. Untuk melakukannnya menggunakan tool yang terdapat di dalam OpenVINO toolkit, dapat ada unduh di <a rel="noreferrer noopener" aria-label="sini (opens in a new tab)" href="https://software.intel.com/en-us/openvino-toolkit/choose-download" target="_blank">sini</a>.
 
 Beberapa perangkat yang saya gunakan adalah mac OS dan raspberry pi 3 B+, mac OS untuk mengubah model tensorflow ke dalam Intermediate Representation(IR) sedangkan raspberry host untuk deploy model dari OpenVINO. Kenapa tidak menggunakan raspberry sebagai tempat konversi juga, karena OpenVINO toolkit raspberry hanya menyediakan Inference Engine saja. Beberapa topik yang akan dibahas adalah sebagai berikut
 
@@ -161,7 +161,7 @@ cv.imwrite('out.png', frame)</code></pre>
 Sebenarnya kode python di atas, mirip dengan kode yang digunakan pada artikel [sebelumnya](https://www.sinaungoding.com/installasi-neural-compute-stick-2-raspberry-pi/) tetapi dimodifikasi sedikit untuk menampilkan nama object yang terdeteksi. Silakan dijalankan kode python tersebut, kemudian untuk gambar yang akan kita proses adalah di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/vino-objects.jpg" alt="Input object detection" class="wp-image-353" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/06/vino-objects.jpg 500w, https://www.sinaungoding.com/wp-content/uploads/2019/06/vino-objects-300x225.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /><figcaption>Input object detection</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/vino-objects.jpg" alt="Input object detection" class="wp-image-353" srcset="/assets/images/2019/06/vino-objects.jpg 500w, /assets/images/2019/06/vino-objects-300x225.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /><figcaption>Input object detection</figcaption></figure>
 </div>
 
 Ketika terjadi error di bawah ini, silakan ditambahkan parameter `--data_type FP16` pada perintah untuk mengubah ke dalam model inference. Hal tersebut terjadi karena raspberry tidak mendukung FP16 untuk Movidius(Myriad). 
@@ -178,7 +178,7 @@ Sehingga perintah menjadi seperti di bawah ini
 Silakan diupdate file \*.bin dan \*.xml sebelumnya, setelah itu dijalankan kembali seharusnya sudah tidak ada error yang terjadi. Hasilnya kira-kira ditampilkan pada gambar di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/vino-out.png" alt="Output object detection" class="wp-image-354" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/06/vino-out.png 500w, https://www.sinaungoding.com/wp-content/uploads/2019/06/vino-out-300x225.png 300w" sizes="(max-width: 500px) 100vw, 500px" /><figcaption>Output object detection</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/vino-out.png" alt="Output object detection" class="wp-image-354" srcset="/assets/images/2019/06/vino-out.png 500w, /assets/images/2019/06/vino-out-300x225.png 300w" sizes="(max-width: 500px) 100vw, 500px" /><figcaption>Output object detection</figcaption></figure>
 </div>
 
 Jika dilihat dari hasilnya sebenarnya hampir sempurna, objek orang yang memakai jaket merah kelihatan kecil tidak dapat terdeteksi. Sebelumnya sudah pernah saya gunakan sebagai contoh ketika langsung menggunakan <a rel="noreferrer noopener" aria-label="OpenCV (opens in a new tab)" href="https://www.sinaungoding.com/object-recognized-menggunakan-opencv/" target="_blank">OpenCV</a> dan hasilnya sempurna, sebenarnya masih bisa disempurnakan dengan mengubah beberapa hyperparameter tetapi jika hanya sebagai contoh untuk menggunakan OpenVINO sudah cukup sih. Kode program di atas dapat diunduh di <a href="https://github.com/0d3ng/object-detection-vino.git" target="_blank" rel="noreferrer noopener" aria-label="sini (opens in a new tab)">sini</a>.

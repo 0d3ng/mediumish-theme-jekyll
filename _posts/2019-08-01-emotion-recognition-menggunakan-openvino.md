@@ -24,11 +24,11 @@ tags:
   - raspberry-pi
 ---
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/08/emotion-recognition-vino-1024x768.jpg" alt="" class="wp-image-439" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/08/emotion-recognition-vino-1024x768.jpg 1024w, https://www.sinaungoding.com/wp-content/uploads/2019/08/emotion-recognition-vino-300x225.jpg 300w, https://www.sinaungoding.com/wp-content/uploads/2019/08/emotion-recognition-vino-768x576.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/08/emotion-recognition-vino-1024x768.jpg" alt="" class="wp-image-439" srcset="/assets/images/2019/08/emotion-recognition-vino-1024x768.jpg 1024w, /assets/images/2019/08/emotion-recognition-vino-300x225.jpg 300w, /assets/images/2019/08/emotion-recognition-vino-768x576.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 </div>
 
 Bismillah,  
-Jika pada kesempatan <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="https://www.sinaungoding.com/openvino-object-detection-yolo3/" target="_blank">sebelumnya</a> saya telah posting penerapan YOLO V3 untuk pengenalan object, pada kali ini akan saya coba menulis untuk pengenalan emosi. Hasil pengenalan tersebut saya coba di Raspberry Pi 3B+ dan Neural Compute Stick 2. 
+Jika pada kesempatan <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/openvino-object-detection-yolo3/" target="_blank">sebelumnya</a> saya telah posting penerapan YOLO V3 untuk pengenalan object, pada kali ini akan saya coba menulis untuk pengenalan emosi. Hasil pengenalan tersebut saya coba di Raspberry Pi 3B+ dan Neural Compute Stick 2. 
 
 Untuk model emotion recognition sendiri sebenarnya sudah disediakan di dokumetnasi OpenVino, sedangkan konsep penerapannya sendiri menggunakan Thread dan Queue. Kenapa menggunakan Thread, yang jelas agar proses paralel yang dilakukan bisa lebih cepat. Karena untuk emotion recognition ada 2 proses di dalamnya yaitu untuk mendeteksi wajah dan untuk mendeteksi ekpresi wajah. Beberapa point yang akan disampaikan dalam tulisan ini adalah sebagai berikut;
 
@@ -299,7 +299,7 @@ Selanjutnya akan kita coba kode lengkap yang telah dibuat, untuk dapat menjalank
 Sebenarnya ada beberapa parameter yang digunakan, silakan cek pada fungsi main, atau bisa menambahkan parameter `-h` di belakang `main.py` ketika menjalankan program. Kira-kira hasilnya adalah sebagai berikut
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/08/OpenVINO-emotion-recognition.gif" alt="OpenVINO-emotion-recognition" class="wp-image-438" /><figcaption>OpenVINO-emotion-recognition</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/08/OpenVINO-emotion-recognition.gif" alt="OpenVINO-emotion-recognition" class="wp-image-438" /><figcaption>OpenVINO-emotion-recognition</figcaption></figure>
 </div>
 
 Sebenarnya masih ada beberupa kekurangan untuk contoh di atas, misalkan belum bisa deteksi multiple objek orang belum bisa dilakukan. Selanjutnya ketika tidak mendeteksi objek, label masih tampil. Hal tersebut bisa disolusikan dengan tidak menggunakan queue dan perlu dilakukan refresh ketika tidak mendeteksi. Untuk full kode bisa didapatkan di <a href="https://github.com/0d3ng/emotion-recognition-vino.git" target="_blank" rel="noreferrer noopener" aria-label="sini (opens in a new tab)">sini</a>.

@@ -24,7 +24,7 @@ tags:
   - virtualenvwrapper
 ---
 Bismillah,  
-Seperti pernyataan sebelumnya yang saya sampaikan pada <a rel="noreferrer noopener" aria-label="postingan lalu (opens in a new tab)" href="http://www.sinaungoding.com/wordpress/2019/03/31/memasang-modul-kamera-di-raspberry/" target="_blank">postingan lalu</a> bahwa saya akan mulai melangkah lebih jauh untuk memanfaatkan raspberry pi sebagai perangkat _computer vision_. Agara dapat digunakan kita membutuhkan paket atau framework untuk _computer vision_, salah satu yang terkenal adalah OpenCV(Open Source Computer Vision Library). Ditulis menggunakan bahasa pemrograman C/C++ dan dapat di-wrap oleh bahasa pemrograman java ataupun python yang dapat berjalan di multi platform seperti Windows, Linux, Mac OS, iOS dan Android. _Table of content_ yang akan saya sampaikan adalah sebagai berikut
+Seperti pernyataan sebelumnya yang saya sampaikan pada <a rel="noreferrer noopener" aria-label="postingan lalu (opens in a new tab)" href="/memasang-modul-kamera-di-raspberry/" target="_blank">postingan lalu</a> bahwa saya akan mulai melangkah lebih jauh untuk memanfaatkan raspberry pi sebagai perangkat _computer vision_. Agara dapat digunakan kita membutuhkan paket atau framework untuk _computer vision_, salah satu yang terkenal adalah OpenCV(Open Source Computer Vision Library). Ditulis menggunakan bahasa pemrograman C/C++ dan dapat di-wrap oleh bahasa pemrograman java ataupun python yang dapat berjalan di multi platform seperti Windows, Linux, Mac OS, iOS dan Android. _Table of content_ yang akan saya sampaikan adalah sebagai berikut
 
   * [Install OpenCV](#install-opencv)
   * [Ujicoba OpenCV](#ujicoba-opencv)

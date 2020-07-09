@@ -24,7 +24,7 @@ tags:
   - tensorflow
 ---
 Bismillah,  
-Jika pada artikel <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="http://www.sinaungoding.com/wordpress/2019/05/14/tensorflow-custom-object-detection-api-cloud/" target="_blank">sebelumnya</a> kita sudah mencoba untuk melakukan training object detection menggunakan tensorflow di cloud, pada kesempatan kali ini kita akan mencoba hasil dari training tersebut. Agar dapat digunakan model hasil training yang telah kita lakukan, satu step lagi yang harus dilakukan adalah dengan export ke Tensorflow graph proto. 
+Jika pada artikel <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/tensorflow-custom-object-detection-api-cloud/" target="_blank">sebelumnya</a> kita sudah mencoba untuk melakukan training object detection menggunakan tensorflow di cloud, pada kesempatan kali ini kita akan mencoba hasil dari training tersebut. Agar dapat digunakan model hasil training yang telah kita lakukan, satu step lagi yang harus dilakukan adalah dengan export ke Tensorflow graph proto. 
 
 #### Download Training Model
 
@@ -129,7 +129,7 @@ cv.waitKey()</code></pre>
 Hasil dari program di atas seharusnya seperti di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/05/Hasil-Testing-e1557992381977.png" alt="Hasil Testing" class="wp-image-163" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/05/Hasil-Testing-e1557992381977.png 442w, https://www.sinaungoding.com/wp-content/uploads/2019/05/Hasil-Testing-e1557992381977-300x177.png 300w" sizes="(max-width: 442px) 100vw, 442px" /><figcaption>Hasil Testing</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/05/Hasil-Testing-e1557992381977.png" alt="Hasil Testing" class="wp-image-163" srcset="/assets/images/2019/05/Hasil-Testing-e1557992381977.png 442w, /assets/images/2019/05/Hasil-Testing-e1557992381977-300x177.png 300w" sizes="(max-width: 442px) 100vw, 442px" /><figcaption>Hasil Testing</figcaption></figure>
 </div>
 
 Binggo! Hasil di atas hampir sempurna object plate dapat terdeteksi walaupun masih ada object lain yang terdeteksi, seharusnya hanya satu saja yang terdeteksi yaitu object plate. Untuk dapat melakukan itu ada banyak faktor yang perlu dilakukan enchancment, yang paling utama adalah jumlah dataset yang digunakan sebaiknya more than 500 dan jumlah iterasi ketika melakukan training. Contoh model yang saya gunakan datasetnya baru sekitar 70an dengan iterasi 10000. 🙂 Untuk resource silakan bisa diambil di <a rel="noreferrer noopener" aria-label="sini (opens in a new tab)" href="https://github.com/0d3ng/tf-plate-detection-cloud.git" target="_blank">sini</a>

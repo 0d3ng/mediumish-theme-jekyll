@@ -26,7 +26,7 @@ tags:
   - java
 ---
 Bismillah,  
-Pada postingan <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="https://www.sinaungoding.com/mengenal-identifier-framework-hibernate/" target="_blank">sebelumnya</a> sudah dibahas mengenai identifier sederhana dengan sebuah kolom sebagai identifier, sementara masih ada lagi identifier yang lebih komplek lagi dengan kolom lebih dari satu. Identifier seperti ini sering disebut composite identifier. Biasanya model identifier jenis ini akan entitasnya berelasi dengan entitas yang lain, beberapa point yang akan dibahas adalah sebagai berikut
+Pada postingan <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/mengenal-identifier-framework-hibernate/" target="_blank">sebelumnya</a> sudah dibahas mengenai identifier sederhana dengan sebuah kolom sebagai identifier, sementara masih ada lagi identifier yang lebih komplek lagi dengan kolom lebih dari satu. Identifier seperti ini sering disebut composite identifier. Biasanya model identifier jenis ini akan entitasnya berelasi dengan entitas yang lain, beberapa point yang akan dibahas adalah sebagai berikut
 
   * [Composite identifier menggunakan](#Composite-identifier-menggunakan-@EmbeddedId) `<a href="#Composite-identifier-menggunakan-@EmbeddedId">@EmbeddedId</a>`
   * [Composite identifier menggunakan](#Composite-identifier-menggunakan-@IdClass) `<a href="#Composite-identifier-menggunakan-@IdClass">@IdClass</a>`
@@ -122,7 +122,7 @@ Pada entitas `Mahasiswa` perlu ditambahkan `@IdClass` dengan class apa yang menj
 Selanjutnya identifier model jenis ini menggunakan relasi @ManyToOne untuk entitas-entitas yang berelasi, sebagai contoh digambarkan dalam ERD seperti di bawahi ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/Identifier-dengan-asosiasi.png" alt="Identifier dengan asosiasi" class="wp-image-312" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/06/Identifier-dengan-asosiasi.png 572w, https://www.sinaungoding.com/wp-content/uploads/2019/06/Identifier-dengan-asosiasi-300x63.png 300w" sizes="(max-width: 572px) 100vw, 572px" /><figcaption>Identifier dengan asosiasi</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/Identifier-dengan-asosiasi.png" alt="Identifier dengan asosiasi" class="wp-image-312" srcset="/assets/images/2019/06/Identifier-dengan-asosiasi.png 572w, /assets/images/2019/06/Identifier-dengan-asosiasi-300x63.png 300w" sizes="(max-width: 572px) 100vw, 572px" /><figcaption>Identifier dengan asosiasi</figcaption></figure>
 </div>
 
 Kemudian kita akan coba mapping ke dalam class java menggunakan identifier composite, potongan program dapat dilihat pada contoh di bawah ini

@@ -27,7 +27,7 @@ tags:
   - spring
   - spring boot
 ---
-<figure class="wp-block-image"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/07/spring-boot-jdbc2-1024x682.jpg" alt="" class="wp-image-417" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/07/spring-boot-jdbc2-1024x682.jpg 1024w, https://www.sinaungoding.com/wp-content/uploads/2019/07/spring-boot-jdbc2-300x200.jpg 300w, https://www.sinaungoding.com/wp-content/uploads/2019/07/spring-boot-jdbc2-768x511.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure> 
+<figure class="wp-block-image"><img src="/assets/images/2019/07/spring-boot-jdbc2-1024x682.jpg" alt="" class="wp-image-417" srcset="/assets/images/2019/07/spring-boot-jdbc2-1024x682.jpg 1024w, /assets/images/2019/07/spring-boot-jdbc2-300x200.jpg 300w, /assets/images/2019/07/spring-boot-jdbc2-768x511.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure> 
 
 Bismillah,  
 Sebenarnya postingan kali ini adalah kelanjutan dari postingan <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="https://www.sinaungoding.com/operasi-crud-menggunakan-spring-boot-jdbc/" target="_blank">sebelumnya</a>, yang mana di dalam postingan tersebut membahas bagaimana Spring menyediakan kemudahan akses ke dalam database. Selain itu, dengan konfigurasi yang sangat sederhana juga. Projek aplikasi yang digunakan dalam artikel ini masih menggunakan projek pada artikel sebelumnya, silakan clone di <a rel="noreferrer noopener" aria-label="sini (opens in a new tab)" href="https://github.com/0d3ng/crud-spring-boot.git" target="_blank">sini</a> projek tersebut.

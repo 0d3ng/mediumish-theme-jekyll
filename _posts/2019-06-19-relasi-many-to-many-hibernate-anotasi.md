@@ -25,7 +25,7 @@ tags:
   - many-to-many
 ---
 Bismillah,  
-Many to many adalah jenis relasi yang terakhir untuk menangai bertukarnya informasi antar entitas, jika pada artikel <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="https://www.sinaungoding.com/relasi-one-to-many-hibernate-anotasi/" target="_blank">sebelumnya</a> terdapat banyak mekanisme yang dapat digunakan walaupun tidak semua optimal. Sedangkan pada relasi many to many tidak banyak model yang dapat digunakan, hibernate untuk melakukan relasi ini menggunakan anotasi `@ManyToMany`. Hal yang menjadi perhatian adalah ketika menggunakan relasi ini, pasti akan terbentuk sebuah tabel baru oleh hibernate. Ilustrasi penerapan relasi many to many misalnya ketika relasi yang terjadi antara Mahasiswa dengan sebuah Tugas, bisa saja satu mahasiswa mengerjakan tugas yang banyak dan juga tugas yang sama dikerjakan oleh banyak mahasiswa. Beberapa model `@ManyToMany` yang digunakan hibernate adalah sebagai berikut
+Many to many adalah jenis relasi yang terakhir untuk menangai bertukarnya informasi antar entitas, jika pada artikel <a rel="noreferrer noopener" aria-label="sebelumnya (opens in a new tab)" href="/relasi-one-to-many-hibernate-anotasi/" target="_blank">sebelumnya</a> terdapat banyak mekanisme yang dapat digunakan walaupun tidak semua optimal. Sedangkan pada relasi many to many tidak banyak model yang dapat digunakan, hibernate untuk melakukan relasi ini menggunakan anotasi `@ManyToMany`. Hal yang menjadi perhatian adalah ketika menggunakan relasi ini, pasti akan terbentuk sebuah tabel baru oleh hibernate. Ilustrasi penerapan relasi many to many misalnya ketika relasi yang terjadi antara Mahasiswa dengan sebuah Tugas, bisa saja satu mahasiswa mengerjakan tugas yang banyak dan juga tugas yang sama dikerjakan oleh banyak mahasiswa. Beberapa model `@ManyToMany` yang digunakan hibernate adalah sebagai berikut
 
   * [@ManyToMany Unidirectional](#@ManyToMany-Unidirectional)
   * [@ManyToMany Bidirectional](#@ManyToMany-Bidirectional)
@@ -37,7 +37,7 @@ Many to many adalah jenis relasi yang terakhir untuk menangai bertukarnya inform
 
 Sama halnya dengan relasi pendahulu, @ManyToMany juga terdapat model relasi unidirectional. Misalkan kita memiliki relasi ERD seperti gambar di bawah ini<figure class="wp-block-image">
 
-<img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/many-to-many.png" alt="Many to many unidirectional" class="wp-image-293" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/06/many-to-many.png 616w, https://www.sinaungoding.com/wp-content/uploads/2019/06/many-to-many-300x74.png 300w" sizes="(max-width: 616px) 100vw, 616px" /> <figcaption>Many to many unidirectional</figcaption></figure> 
+<img src="/assets/images/2019/06/many-to-many.png" alt="Many to many unidirectional" class="wp-image-293" srcset="/assets/images/2019/06/many-to-many.png 616w, /assets/images/2019/06/many-to-many-300x74.png 300w" sizes="(max-width: 616px) 100vw, 616px" /> <figcaption>Many to many unidirectional</figcaption></figure> 
 
 Setelah kita mapping ke dalam class java berarti membutuhkan class `Tugas` dan class `Mahasiswa`, sedangkan class MahasiswaTugas tidak perlu dibuat karena akan digenerate oleh hibernate.
 
@@ -112,7 +112,7 @@ Karena Bidirectional sehingga membutuhkan anotasi `@ManyToMany` juga pada entita
 Selain model-model di atas, yang dapat dilakukan teknik lain adalah `@ManyToMany` dengan melakukan linked pada sebuah entitas. Teknik ini menurut saya dari sisi codingan lebih banyak karena harus mengimplementasi template CRUD dari hibernate pada kedua entitasnya, relasi yang terjadi pada tabel di database ditunjukkan pada gambar di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/06/many-to-many-bidi.png" alt="Many to many bidirectional" class="wp-image-296" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/06/many-to-many-bidi.png 601w, https://www.sinaungoding.com/wp-content/uploads/2019/06/many-to-many-bidi-300x78.png 300w" sizes="(max-width: 601px) 100vw, 601px" /><figcaption>Many to many bidirectional</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/06/many-to-many-bidi.png" alt="Many to many bidirectional" class="wp-image-296" srcset="/assets/images/2019/06/many-to-many-bidi.png 601w, /assets/images/2019/06/many-to-many-bidi-300x78.png 300w" sizes="(max-width: 601px) 100vw, 601px" /><figcaption>Many to many bidirectional</figcaption></figure>
 </div>
 
 Kemudian untuk mapping class java dari gambar di atas, dapat dicontohkan seperti di bawah ini

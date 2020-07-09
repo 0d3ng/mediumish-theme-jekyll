@@ -38,7 +38,7 @@ Berawal dari ketertarikan saya untuk belajar tentang _machine learning_ tetapi k
   * Klik tombol _**START MY FREE TRIAL**_
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/gcs-fail-e1556456699425.png" alt="" class="wp-image-138" /><figcaption>Registrasi Google Cloud Storage Gagal</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/gcs-fail-e1556456699425.png" alt="" class="wp-image-138" /><figcaption>Registrasi Google Cloud Storage Gagal</figcaption></figure>
 </div>
 
 Pada gambar di atas menunjukkan proses pendaftaran karena kartu debit yang saya gunakan, saya menggunakan kartu debit Mandiri. Ada yang bilang bahwa kartu debit Mandiri dapat digunakan untuk melakukan pendaftaran dengan syarat fitur VBV(Verified By Visa) sudah diaktifkan, padahal saya sudah ke teller bank Mandiri terdekat dan sudah menunggu 3 hari. Info dari teller untuk proses aktivasi membutuhkan waktu 3 hari, tetapi memang tidak bisa digunaakan untuk mendaftar _google cloud storage_
@@ -72,7 +72,7 @@ Akhirnya setelah bertanya-tanya ke forum dan mendapatkan jawaban seperti di bawa
 Akhirnya saya membuat rekening jenius, untuk proses pembuatannya sangat mudah sekali nggak sampai 15 menit. Kemudian jika Anda di daerah jabodetabek kartu Anda bisa diantar ke rumah, untuk proses pendaftaran silakan bisa diunduh di google play untuk pengguna Android. Ketika saya membuat rekening tersebut di Malang, mereka buka counter di MOG dan MATOS. Setelah memasukan _card number_ dan CVC(kalau di jenius CVV), jika berhasil maka akan diarahkan ke halaman _google cloud storage_ seperti pada gambar di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="http://www.sinaungoding.com/wordpress/wp-content/uploads/2019/04/gcs-success-1024x202.png" alt="" class="wp-image-140" /><figcaption>Registrasi Google Cloud Storage Berhasil</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/04/gcs-success-1024x202.png" alt="" class="wp-image-140" /><figcaption>Registrasi Google Cloud Storage Berhasil</figcaption></figure>
 </div>
 
 Walaupun proses pendaftaran google cloud storage menggunakan kartu debit/kredit tujuannya adalah untuk memastikan yang mendaftar bukan robot, itu pernyataannya google tetapi kartu debit/kredit tidak boleh saldo Rp.0 atau harus ada isinya. Ketika saya mendaftar terpotong Rp.10.000, tetapi nanti dikembalikan lagi. Ada pernyataan menarik dari seorang teman seperti ini

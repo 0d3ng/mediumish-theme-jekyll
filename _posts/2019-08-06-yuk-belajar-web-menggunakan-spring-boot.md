@@ -26,7 +26,7 @@ tags:
   - thymeleaf
   - web
 ---
-<figure class="wp-block-image"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/08/Web-Thymeleaf-Spring-Boot-1024x729.jpg" alt="" class="wp-image-447" /></figure> 
+<figure class="wp-block-image"><img src="/assets/images/2019/08/Web-Thymeleaf-Spring-Boot-1024x729.jpg" alt="" class="wp-image-447" /></figure> 
 
 Bismillah,  
 Pada kesempatan kali ini kita akan belajar web java menggunakan Spring Boot, walaupun sebelumnya framework Spring untuk web sudah menyediakan Spring MVC. Jika pada framework tersebut kita harus konfigurasi aplikasi dalam menggunakan `web.xml`, sebaliknya ketika menggunakan Spring Boot sudah tidak dibutuhkan lagi. Beberapa point yang akan kita bahas adalah sebagai berikut
@@ -202,7 +202,7 @@ Template Thymeleaf merupakan salah satu template engine yang tersedia pada Sprin
 Silakan dijalankan aplikasi yang telah dibuat, kemudian ketikan pada browser [http://localhost:8081](http://localhost:8081/) seharusnya jika semua normal akan tampil data-data yang sebelumnya telah kita tambahkan di database. Tampilannya jika berhasil seperti pada gambar di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/08/Thymeleaf-Spring-Boot.png" alt="Thymeleaf Spring Boot" class="wp-image-444" srcset="https://www.sinaungoding.com/wp-content/uploads/2019/08/Thymeleaf-Spring-Boot.png 747w, https://www.sinaungoding.com/wp-content/uploads/2019/08/Thymeleaf-Spring-Boot-300x129.png 300w" sizes="(max-width: 747px) 100vw, 747px" /><figcaption>Thymeleaf Spring Boot</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/08/Thymeleaf-Spring-Boot.png" alt="Thymeleaf Spring Boot" class="wp-image-444" srcset="/assets/images/2019/08/Thymeleaf-Spring-Boot.png 747w, /assets/images/2019/08/Thymeleaf-Spring-Boot-300x129.png 300w" sizes="(max-width: 747px) 100vw, 747px" /><figcaption>Thymeleaf Spring Boot</figcaption></figure>
 </div>
 
 #### Implementasi Paging {#Implementasi-Paging}
@@ -244,7 +244,7 @@ Kita juga butuh menambahkan css bootstrap dan script untuk menampilkan icon pagi
 Untuk macam-macam paging yang bisa digunakan, silakan cek di dokumentasi resminya sang pembuatnya. Sekarang coba jalankan aplikasi yang telah ditambahkan paging, dan lihat hasilnya pada browser Anda. Kira-kira hasilnya seperti di bawah ini
 
 <div class="wp-block-image">
-  <figure class="aligncenter"><img src="https://www.sinaungoding.com/wp-content/uploads/2019/08/Thymeleaf-Spring-Boot-Paging-1024x405.png" alt="Thymeleaf Spring Boot Paging" class="wp-image-445" /><figcaption>Thymeleaf Spring Boot Paging</figcaption></figure>
+  <figure class="aligncenter"><img src="/assets/images/2019/08/Thymeleaf-Spring-Boot-Paging-1024x405.png" alt="Thymeleaf Spring Boot Paging" class="wp-image-445" /><figcaption>Thymeleaf Spring Boot Paging</figcaption></figure>
 </div>
 
 Hasilnya lebih menarik dari sebelumnya, karena telah diberikan css. Sekarang silakan ujicoba untuk menerapkan paging dengan mengetik alamat ini pada browser Anda, <http://localhost:8081/index?size=1>. Pagingnya seharusnya akan berubah. 🙂

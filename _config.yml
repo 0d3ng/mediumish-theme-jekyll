@@ -4,7 +4,7 @@ title: "Sinaungoding"
 description: "Orang boleh pandai setinggi langit, tapi selama ia tak menulis, ia akan hilang di dalam masyarakat dan dari sejarah. - Pramoedya Ananta Toer"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-#baseurl: /sinaungoding
+baseurl: ''
 google_analytics: 'UA-46278016-1'
 disqus: 'odeng'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
@@ -36,7 +36,7 @@ authors:
     avatar: 'assets/images/odeng.jpeg'
     gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: lepengdados@gmail.com
-    web: https://sinaungoding.com
+    web: https://www.sinaungoding.com
     twitter: https://twitter.com/mas_nopri
     description: "Learner, Software engineer, and Opensource Enthusiasm"
 

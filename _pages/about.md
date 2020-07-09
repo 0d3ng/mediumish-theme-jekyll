@@ -18,7 +18,7 @@ theme-transparent-header-meta:
   - default
 ---
 <div class="wp-block-image">
-  <figure class="alignleft is-resized"><img src="/assets/images/2019/04/30645300-150x150.jpeg" alt="" class="wp-image-127" width="150" height="150" srcset="/assets/images/2019/04/30645300-150x150.jpeg 150w, /assets/images/2019/04/30645300-300x300.jpeg 300w, /assets/images/2019/04/30645300.jpeg 460w" sizes="(max-width: 150px) 100vw, 150px" /></figure>
+  <figure class="alignleft is-resized"><img src="/assets/images/2019/04/30645300-150x150.jpeg" alt="" class="rounded-circle" width="100" height="100" srcset="/assets/images/2019/04/30645300-150x150.jpeg 150w, /assets/images/2019/04/30645300-300x300.jpeg 300w, /assets/images/2019/04/30645300.jpeg 460w" sizes="(max-width: 150px) 100vw, 150px" /></figure>
 </div>
 
 Nama saya adalah Noprianto, pernah bekerja di industri kurang lebih 6 tahun. Sekarang berhijrah ke dunia akademik di Politeknik Negeri Malang. Menyukai dunia pemrograman terutama bahasa pemrograman Java, _computer vision_ dan _machine learning_. Bercita-cita ingin berbagi ilmu ke orang lain dari hasil pengalaman ketika di dunia industri dan pengalaman baru. Demikian profil singkat saya, semoga bermanfaat. 🙂

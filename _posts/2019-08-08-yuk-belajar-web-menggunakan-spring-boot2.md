@@ -254,8 +254,9 @@ Alert kadang disebut juga dengan notifikasi, hal tersebut penting untuk menginfo
             &lt;/div>
         &lt;/div></code></pre>
 
-Thymeleaf memiliki tag untuk menangkap error ketika atau mendeteksi error, bisa menggunakan `th:if="${#fields.hasErrors('all')}`. Sementara untuk menampilkan pesan error digunakan tag `th:errors="*{all}"`, hasilnya adalah sebagai berikut<figure class="wp-block-image">
+Thymeleaf memiliki tag untuk menangkap error ketika atau mendeteksi error, bisa menggunakan `th:if="${#fields.hasErrors('all')}`. Sementara untuk menampilkan pesan error digunakan tag `th:errors="*{all}"`, hasilnya adalah sebagai berikut
 
+<figure class="wp-block-image">
 <img src="/assets/images/2019/08/Web-Thymeleaf-Spring-Boot-Alert-1024x217.png" alt="Spring Boot Alert" class="wp-image-458" srcset="/assets/images/2019/08/Web-Thymeleaf-Spring-Boot-Alert-1024x217.png 1024w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot-Alert-300x64.png 300w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot-Alert-768x163.png 768w, /assets/images/2019/08/Web-Thymeleaf-Spring-Boot-Alert.png 1156w" sizes="(max-width: 1024px) 100vw, 1024px" /> <figcaption>Spring Boot Alert</figcaption></figure> 
 
 Demikianlah artikel saya mengenai web Java menggunakan Spring Boot dikombinasikan dengan Bootstrap, semoga bermanfaat dan menambah wawasan baru bagi temen-temen yang ingin dan sedang belajar Java. Kritik dan saran sangat diharapkan untuk meningkatkan kwalitas tulisan saya, kode lengkap dapat didapatkan di [sini](https://github.com/0d3ng/demo-thymeleaf.git). 🙂

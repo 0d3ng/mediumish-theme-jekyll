@@ -5,7 +5,7 @@ description: "Orang boleh pandai setinggi langit, tapi selama ia tak menulis, ia
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
-google_analytics: 'UA-46278016-1'
+google_analytics: 'UA-142050876-1'
 disqus: 'odeng'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
@@ -47,6 +47,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-analytics
 
 # Archives
 jekyll-archives:
@@ -79,3 +80,8 @@ adsense-data-ad-slot: "1363087678"
 lazyimages: "disabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+
+jekyll_analytics:
+  GoogleAnalytics:          # Add, if you want to track with Google Analytics
+    id: UA-142050876-1      # Required - replace with your tracking id
+    anonymizeIp: true      # Optional - Default: false - set to true for anonymized tracking

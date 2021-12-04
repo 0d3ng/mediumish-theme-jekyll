@@ -84,4 +84,4 @@ exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
 jekyll_analytics:
   GoogleAnalytics:          # Add, if you want to track with Google Analytics
     id: UA-142050876-1      # Required - replace with your tracking id
-    anonymizeIp: true      # Optional - Default: false - set to true for anonymized tracking
+    anonymizeIp: true       # Optional - Default: false - set to true for anonymized tracking

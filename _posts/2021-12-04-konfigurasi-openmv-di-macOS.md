@@ -1,5 +1,5 @@
 ---
-layout: post title:  "Konfigurasi openMV di MacOS"
+layout: post title:  "Konfigurasi OpenMV di MacOS"
 author: odeng categories: [OpenMV]
 tags: [openmv, micropython]
 image: assets/images/2021/12/03.jpg description: "My review of Inception movie. Acting, plot and something else in this short
@@ -12,8 +12,7 @@ Hah, sampai lupa punya blog. Hari ini saya ada perangkat baru namanya OpenMV, ya
 sebuah microprocessor yang sudah dibekali untuk kebutuhan computer vision. Sebenarnya mirip dengan arduino dan
 sejenisnya tetapi memang fungsi diperluas include modul kamera. Untuk lebih jelasnya silakan mengunjungi di website
 resminya di [sini](https://openmv.io/collections/cams/products/openmv-cam-h7-r2).
-
-Ada beberapa tahapan yang bisa dilakukan seperti di bawah ini
+Ada beberapa bagian yang akan saya tulis seperti di bawah ini
 
 * [Download OpenMV IDE](#Konfigurasi-Spring-Boot)
 * [Install libusb](#Install-libusb)

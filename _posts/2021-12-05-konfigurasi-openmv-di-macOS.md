@@ -1,10 +1,11 @@
 ---
-layout: post title:  "Konfigurasi OpenMV di MacOS"
-author: odeng categories: [OpenMV]
+layout: post 
+title:  "Konfigurasi OpenMV di MacOS"
+author: odeng 
+categories: [OpenMV]
 tags: [openmv, micropython]
-image: assets/images/2021/12/03.jpg description: "My review of Inception movie. Acting, plot and something else in this short
-description."
-featured: true hidden: true rating: 0
+image: assets/images/2021/12/03.jpg
+featured: true
 ---
 
 Bismillah,  
@@ -78,7 +79,7 @@ Contoh kode program untuk menampilkan gambar, sederhana sekali jika dilihat dari
 <blockquote class="wp-block-quote">
   <p>
     Alhamdulillah, OpenMV menyediakan banyak sekali contoh kode program yang bisa kita gunakan dari yang sederhana sampai
-dengan yang advance seperti face recognition. Contoh kode program tersebut dapat diakses melalui menu `File-Example-OpenMV`.
+dengan yang advance seperti face recognition. Contoh kode program tersebut dapat diakses melalui menu File-Example-OpenMV.
   </p>
 </blockquote>
 

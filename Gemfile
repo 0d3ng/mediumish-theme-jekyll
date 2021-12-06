@@ -19,3 +19,5 @@ group :jekyll_plugins do
     gem 'rouge'
     gem 'jekyll-analytics'
 end
+
+gem "webrick", "~> 1.7"

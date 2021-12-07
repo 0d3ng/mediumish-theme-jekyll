@@ -9,7 +9,7 @@ featured: true
 ---
 
 Bismillah,  
-Saya akan melanjutnya cerita dari postingan [sebelumnya](2021-12-05-konfigurasi-openmv-di-macOS.md) yaitu masih kaitannya dengan perangkat OpenMV, 
+Saya akan melanjutnya cerita dari postingan [sebelumnya]({{ site.baseurl }}{% link _posts/2021-12-05-konfigurasi-openmv-di-macOS.md %}) yaitu masih kaitannya dengan perangkat OpenMV, 
 seperti yang telah saya sebutkan bahwa OpenMV telah menyediakan banyak sekali contoh kode program yang bisa kita manfaatkan.
 Sebagai contoh adalah untuk face detection yaitu untuk melakukan deteksi wajah menggunakan metode yang cukup terkenal yaitu **Haar Cascade**.
 Agar alur tulisan saya tersusun dengan rapih saya akan buat point-point sebagai berikut
